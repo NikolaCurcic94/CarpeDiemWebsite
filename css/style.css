@@ -1,0 +1,629 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+            width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+/**********************************Header section********************************/
+
+header {
+    width: 100vw;
+    min-height: 6vh;
+    background: linear-gradient(rgb(8, 61, 141), rgb(19, 106, 187));
+    filter: opacity(80%);
+    color: white;
+    z-index: 5;
+    position: fixed;
+    
+}
+
+
+
+header img {
+    width: 15em;
+    padding: 5px;
+    margin-left: 1em;
+}
+
+header a {
+    color: white;
+    font-weight: 700; 
+}
+
+.slide-down {
+    opacity: 0;
+    animation: slide-down 0.5s linear forwards;
+    animation-delay: calc(0.2s * var(--i));  
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+header #links-div {
+    display: flex;
+    justify-content: space-between;
+   
+}
+/***************************MENU BUTTON******************/
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.menu-btn-burger {
+    background-color: white;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    z-index: 5;
+   
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    z-index: 5;
+    
+}
+
+.menu-btn-burger::before {
+    transform: translateY(-12px);
+    z-index: 5;
+}
+
+.menu-btn-burger::after {
+    transform: translateY(12px);
+    z-index: 5;
+}
+
+/**********ANIMATION*******/
+
+.menu-btn.open .menu-btn-burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+    z-index: 3;
+}
+
+.menu-btn.open .menu-btn-burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+    z-index: 3;
+}
+
+.menu-btn.open .menu-btn-burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+    z-index: 3;
+}
+
+/***************************MOBIE MENU*****************************************/
+
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(19, 106, 187, 0.89);
+    z-index: 2;
+    display: none;
+}
+
+.slide-top {
+    opacity: 0;
+    animation: slide-top 0.5s linear forwards;
+    animation-delay: calc(0.2s * var(--i));  
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.mobile-menu-class {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(19, 106, 187, 0.89);
+    z-index: 2;
+    display: block;
+}
+
+#mobile-menu a {
+    color: white;
+    font-weight: 700;
+}
+
+#mobile-menu a:hover, .link:hover {
+    color: rgb(44, 173, 152);
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+
+/**********************************Hero section********************************/
+
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/CarepDiemBanner-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/**********************************O nama section********************************/
+
+#section-o-nama {
+    background-color: teal;
+    
+    color: white;
+}
+
+#div-o-nama {
+    text-align: center;
+    opacity: 0;
+    animation: slide-right 0.5s linear forwards;
+    animation-delay: 2.5s;
+}
+
+
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.slide-left {
+    opacity: 0;
+    animation: slide-left 0.5s linear forwards;
+    animation-delay: 3s;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+#div-o-nama #section-4-button {
+    margin: 15px 0px 15px 0px;
+    text-align: center;
+}
+
+#section-o-nama h1 {
+    text-align: center;
+    margin: 30px auto;
+}
+
+#section-o-nama p {
+    margin: 20px 20px 10px 20px;
+    text-indent: 5%;
+    font-size: large;
+    text-align: center;
+    
+}
+
+
+
+#div-na-mesecnom-niovu {
+   
+    background-color: rgb(23, 89, 109);
+    color: white;
+    
+}
+
+#div-na-mesecnom-niovu h4 {
+    margin: 20px;
+}
+
+/**********************************Section-carousel********************************/
+
+#section-carousel {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    height: 60vh;
+    background-color: #28aea3;;
+}
+
+
+/**********************************Nasa ponuda section********************************/
+
+#nasa-ponuda-section {
+    background-color: teal;
+    padding: 30px;
+}
+
+#nasa-ponuda-container {
+    min-height: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    
+}
+
+#nasa-ponuda-section > h1 {
+    margin-bottom: 60px;
+    color: white;
+    text-align: center;
+}
+
+#nasa-ponuda-container > .icons, .footer-icons {
+    display: flex;
+    justify-content: center; 
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+#nasa-ponuda-container > .icons:hover, #nasa-ponuda-container > .icons:focus, #nasa-ponuda-container > .icons:active,
+.footer-icons:hover, .footer-icons:focus, .footer-icons:active {
+    
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+   }
+
+#nasa-ponuda-container a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    
+}
+
+#nasa-ponuda-container p {
+    padding-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: x-large;
+}
+
+
+/**********************************Section4 section********************************/
+
+#section-img-4 {
+    display: flex;
+    
+    height: 65vh;
+    color: white;
+}
+#img-5 {
+    flex-basis: 50%;
+    
+    background-image: url(../img/CarepDiem-56.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#section-img-4 #content-div {
+    flex-basis: 50%;
+    
+    padding: 20px;
+    background-color: rgb(23, 89, 109);
+    text-align: center;
+
+}
+
+#section-img-4 h1 {
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+#section-img-4 p {
+    text-indent: 2em;
+}
+
+#section-4-button {
+    margin-top: 5px;
+    color: white;
+    background-color: #28aea3;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+
+}
+
+#section-4-button:hover, #section-4-button:focus, #section-4-button:active {
+ box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+
+
+
+/**********************************Footer********************************/
+
+#footer {
+    background-color: teal;
+    color: white;
+    height: 65vh;
+     
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#footer-div1 {
+    flex-basis: 50%;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+#footer-icons-div {
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+#map {
+    flex-basis: 50%;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+#footer img {
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+#footer h2 {
+    padding-top: 20px;
+    
+}
+
+#footer p {
+    font-size: x-large;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    
+    #hero-section {
+        height: 90vh;
+    }
+    #section-carousel {
+        height: 55vh;
+    }
+
+    .menu-btn {
+        margin-right: 30px;
+    }
+    #section-img-4 {
+        height: 48vh;
+    }
+
+    #section-img-4 h1 {
+        font-size: 1.6rem;
+    }
+    #section-img-4 p {
+        font-size: 0.9rem;
+    }
+    #span-p-2 {
+        display: none;
+    }
+    
+    footer > #footer-div1 > p {
+        font-size: large;
+    }
+
+}
+ 
+@media (max-width: 992px) {
+    #hero-section {
+        height: 75vh;
+    }
+   
+    #section-o-nama h1 {
+        font-size: 2rem;
+    }
+    #nasa-ponuda-section {
+        height: 90vh;
+    }
+    
+    #section-img-4 {
+        height: 44vh;
+    }
+    #span-p-3 {
+        display: none;
+    }
+   
+    
+}
+
+@media (max-width: 880px) {
+    #hero-section {
+        height: 70vh;
+    }
+    
+    #section-o-nama h1 {
+        font-size: 2rem;
+    }
+    #section-carousel {
+        height: 55vh;
+    }
+
+    #section-o-nama h4 {
+        font-size: 1.3rem;
+    }
+
+    #section-img-4 {
+        height: 100vh;
+        flex-flow: column;
+    }
+    
+
+    footer {
+        height: 50vh;
+    }
+
+    footer > #footer-div1 > img {
+        width: 80%;  
+    }
+
+}
+
+@media (max-width: 768px) {
+    header img {
+        width: 13em;
+    }
+    #section-carousel {
+        height: 55vh;
+    }
+    #hero-section {
+        height: 55vh;
+    }
+    
+    #section-o-nama h1 {
+        font-size: 1.8rem;
+    }
+        
+
+    #section-o-nama h4 {
+        font-size: 1.1rem;
+    }
+
+    #section-img-4 {
+        height: 95vh;
+       
+    }
+    
+    
+    
+    footer > #footer-div1 > p {
+        font-size: medium;
+    }
+
+    #footer-div1, #map {
+        flex-basis: 100%;
+    }
+    #map {
+        height: 75%;
+    }
+    
+}
+
+
+@media (max-width: 576px) {
+    header img {
+        width: 10em;
+    }
+
+    #hero-section {
+        height: 40vh;
+    }
+
+    #section-o-nama h4 {
+        font-size: 1rem;
+    }
+   
+    #nasa-ponuda-section {
+        height: 135vh;
+    }
+    #section-img-4 {
+        height: 85vh;
+       
+    }
+
+    #section-carousel {
+        height: 60vh;
+    }
+    #span-p-1 {
+        display: none;
+    }
+
+    
+}
+
+@media (max-width: 450px) {
+    header img {
+        margin-left: 0.5em;
+    }
+    #hero-section {
+        height: 35vh;
+    }
+    
+    #section-img-4 {
+        height: 80vh;
+       
+    }
+    #section-carousel {
+        height: 55vh;
+    }
+}
+
+@media (max-width: 350px) {
+    header img {
+        margin-left: 0.4em;
+    }
+    #hero-section {
+        height: 30vh;
+    }
+    footer {
+        height: 70vh;
+    }
+}
