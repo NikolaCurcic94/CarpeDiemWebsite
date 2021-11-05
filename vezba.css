@@ -1,0 +1,154 @@
+
+body {
+    margin: 0;
+}    
+/**********************************Header section********************************/
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    min-height: 5vh;
+    justify-content: space-around;
+    max-width: 1180px;
+    width: 100%;
+    padding: 0 20px;
+    
+}
+.header {
+    display: flex;
+    width: 100vw;
+    padding: 4px;
+    background: linear-gradient(rgb(8, 61, 141), rgb(19, 106, 187));
+    filter: opacity(80%);
+    z-index: 5;
+    position: fixed;
+
+}
+
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 0 5px;
+}
+.header__ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.header__li {
+    margin: 0 10px;
+}
+
+.header img {
+    width: 15em;
+    padding: 5px;
+    margin-left: 1em;
+}
+
+header a {
+    color: white;
+    font-weight: 700; 
+    text-decoration: none;
+}
+
+.slide-down {
+    opacity: 0;
+    animation: slide-down 0.5s linear forwards;
+    animation-delay: calc(0.2s * var(--i));  
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+/**********************************Hero section********************************/
+
+
+#hero-section {
+    height: 100vh;
+    background-image: url(./img/CarepDiemBanner-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+    
+
+/**********************************Section-about-us********************************/
+
+.section__about__us {
+    color: white;
+}
+
+.div__about__us__info {
+    flex-basis: 50%;
+    background-color: teal;
+    text-align: center;
+    opacity: 0;
+    animation: slide-right 0.5s linear forwards;
+    animation-delay: 2.5s;
+}
+
+.div__about__us__info h1 {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.div__about__us__info p {
+    margin: 20px 20px 10px 20px;
+    text-indent: 5%;
+    font-size: large;
+    text-align: center;  
+}
+
+.div__about__us__monthly {
+    flex-basis: 50%;
+    background-color: rgb(23, 89, 109);
+}
+
+.div__about__us__monthly h4 {
+    margin: 20px;
+}
+
+
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.slide-left {
+    opacity: 0;
+    animation: slide-left 0.5s linear forwards;
+    animation-delay: 3s;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
