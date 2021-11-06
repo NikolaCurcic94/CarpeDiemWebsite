@@ -459,7 +459,9 @@ header #links-div {
     .section__our__offer p {
         font-size: 1.1em;
     }
-
+    .icons {
+        font-size: medium;
+    }
     .footer img {
         margin-bottom: 2em;
     }
@@ -498,7 +500,9 @@ header #links-div {
         font-size: small;
         
     }
-
+    .icons {
+        font-size: smaller;
+    }
     .section__our__offer__icons__wrapper {
         flex-basis: 50%;
     }
@@ -561,6 +565,7 @@ header #links-div {
 
     .hero__section {
         height: 30vh;
+        padding: 0 50px 30px 0;
     }
 
     .hero__section__content {
@@ -592,6 +597,10 @@ header #links-div {
 @media (max-width: 350px) {
     header img {
         margin-left: 0.4em;
+    }
+    .hero__section {
+        height: 30vh;
+        padding: 0 60px 27px 0;
     }
 
     .hero__section {
