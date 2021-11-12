@@ -1,4 +1,7 @@
-
+* {
+    font-family: 'Open Sans', sans-serif;
+    
+}
 body {
     margin: 0;
 }    
@@ -6,24 +9,20 @@ body {
 .wrapper {
     display: flex;
     margin: 0 auto;
-    min-height: 5vh;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 1180px;
     width: 100%;
-    padding: 0 20px;
     
 }
 .header {
     display: flex;
     width: 100vw;
-    padding: 4px;
     background: linear-gradient(rgb(8, 61, 141), rgb(19, 106, 187));
     filter: opacity(80%);
     z-index: 5;
     position: fixed;
-
+    color: white;
 }
-
 
 .header__nav {
     display: flex;
@@ -35,16 +34,17 @@ body {
     list-style: none;
     display: flex;
     flex-direction: row;
+    
 }
 
 .header__li {
-    margin: 0 10px;
+    margin: 0 30px;
 }
 
 .header img {
     width: 15em;
-    padding: 5px;
-    margin-left: 1em;
+    padding-top: 5px;
+    margin-left: 2em;
 }
 
 header a {
@@ -87,68 +87,6 @@ header a {
 
 /**********************************Section-about-us********************************/
 
-.section__about__us {
-    color: white;
-}
 
-.div__about__us__info {
-    flex-basis: 50%;
-    background-color: teal;
-    text-align: center;
-    opacity: 0;
-    animation: slide-right 0.5s linear forwards;
-    animation-delay: 2.5s;
-}
-
-.div__about__us__info h1 {
-    text-align: center;
-    margin: 30px auto;
-}
-
-.div__about__us__info p {
-    margin: 20px 20px 10px 20px;
-    text-indent: 5%;
-    font-size: large;
-    text-align: center;  
-}
-
-.div__about__us__monthly {
-    flex-basis: 50%;
-    background-color: rgb(23, 89, 109);
-}
-
-.div__about__us__monthly h4 {
-    margin: 20px;
-}
-
-
-
-@keyframes slide-right {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-.slide-left {
-    opacity: 0;
-    animation: slide-left 0.5s linear forwards;
-    animation-delay: 3s;
-}
-
-@keyframes slide-left {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
 
 
