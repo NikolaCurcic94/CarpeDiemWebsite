@@ -6,6 +6,10 @@ p {
   font-size: 18px;
 }
 
+section p {
+    text-indent: 2em;
+}
+
 body {
   color: white;
   width: 100%;
@@ -24,6 +28,7 @@ body {
 i {
   color: white;
 }
+
 /**********************************Animations Configuration********************************/
 .slide-down {
   opacity: 0;
@@ -293,7 +298,7 @@ h1 {
 .footer {
   background-color: #28aea3;
   color: white;
-  padding: 1em;
+  padding: 2em;
   
 }
 
@@ -344,6 +349,9 @@ h1 {
   .icons {
     font-size: medium;
   }
+  .footer {
+    padding: 1em;
+  }
   .footer img {
     margin-bottom: 2em;
 }
@@ -357,6 +365,9 @@ h1 {
   }
   .icons {
     font-size: smaller;
+  }
+  .footer {
+    padding: 0.7em;
   }
   .footer img {
     margin-bottom: 1.5em;
@@ -383,7 +394,7 @@ h1 {
     font-size: small;
   }
   .footer {
-    padding: 3em 0 0.5em;
+    padding: 1em 0;
   }
   .footer p {
     font-size: xx-small;
