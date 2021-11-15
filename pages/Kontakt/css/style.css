@@ -353,6 +353,7 @@ i {
     right: 5%;
     top: 46%;
     z-index: 2;
+    padding-right: 1em;
   }
 
   .nav-links {
