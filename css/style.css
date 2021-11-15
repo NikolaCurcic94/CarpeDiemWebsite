@@ -552,34 +552,8 @@ header a {
   transform: scale(1.1);
 }
 
-/**********************************Section4 section********************************/
+/**********************************footer********************************/
 
-/*
-/*.learn__more__btn {
-    margin-top: 5px;
-    color: white;
-    background-color: #28aea3;
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
-
-}
-
-.learn__more__btn:hover, .learn__more__btn:focus, .learn__more__btn:active {
- box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
- -webkit-transform: scale(1.1);
- transform: scale(1.1);
-} 
-
-
-<a href="pages/O-nama/index.html" class="learn__more__btn text-decoration-none">Saznajte više</a> */
-
-/**********************************Footer********************************/
 .footer {
   background-color: #28aea3;
   color: white;
@@ -600,6 +574,7 @@ header a {
 .footer__content {
   display: flex;
   flex-direction: column;
+  row-gap: 1em;
   flex-wrap: wrap;
   flex-basis: 50%;
   justify-content: start;
@@ -631,6 +606,35 @@ header a {
 .footer p {
   font-size: x-large;
 }
+
+/**********************************Button********************************/
+
+
+/*.learn__more__btn {
+    margin-top: 5px;
+    color: white;
+    background-color: #28aea3;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+
+}
+
+.learn__more__btn:hover, .learn__more__btn:focus, .learn__more__btn:active {
+ box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+} 
+
+
+<a href="pages/O-nama/index.html" class="learn__more__btn text-decoration-none">Saznajte više</a> */
+
+/**********************************Responsive********************************/
 
 @media (max-width: 992px) {
   .hero__section {
@@ -675,6 +679,7 @@ header a {
   .hero__section {
     height: 50vh;
     padding: 0 80px 100px 0;
+    
   }
 
   .hero__section__content,
@@ -730,9 +735,9 @@ header a {
     font-size: 0.5em;
   }
 
-  header img {
+  .header__logo {
     width: 10em;
-    margin-left: 1em;
+    margin-left: 0.8em;
   }
 
   .icons {
@@ -748,7 +753,7 @@ header a {
 }
 
 @media (max-width: 450px) {
-  header img {
+  .header__logo {
     margin-left: 0.5em;
   }
 
@@ -781,7 +786,7 @@ header a {
 }
 
 @media (max-width: 350px) {
-  header img {
+  .header__logo {
     margin-left: 0.4em;
   }
   .hero__section {
