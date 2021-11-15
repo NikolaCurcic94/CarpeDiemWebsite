@@ -271,7 +271,7 @@ i {
   }
 }
 
-/***************************MENU BUTTON******************/
+/****************************************MENU BUTTON***************************************/
 .hamburger {
   display: none;
 }
@@ -672,9 +672,6 @@ header a {
   .fas {
     font-size: 0.8em;
   }
-  .header__logo {
-    width: 10em;
-  }
 
   .hero__section {
     height: 50vh;
@@ -735,11 +732,6 @@ header a {
     font-size: 0.5em;
   }
 
-  .header__logo {
-    width: 10em;
-    margin-left: 0.8em;
-  }
-
   .icons {
     font-size: small;
   }
@@ -753,10 +745,28 @@ header a {
 }
 
 @media (max-width: 450px) {
-  .header__logo {
-    margin-left: 0.5em;
+  .header img {
+    width: 10rem;
+    margin-left: 1em;
   }
-
+  .menu-btn-burger {
+    width: 35px;
+    height: 4px;
+    border-radius: 4px;
+  }
+  
+  .menu-btn-burger::before,
+  .menu-btn-burger::after {
+    width: 35px;
+    height: 4px;
+  }
+  
+  .menu-btn-burger::before {
+    transform: translateY(-10px);
+  }
+  .menu-btn-burger::after {
+    transform: translateY(10px);
+  }
   .hero__section {
     height: 30vh;
     padding: 0 50px 15px 0;
@@ -786,9 +796,7 @@ header a {
 }
 
 @media (max-width: 350px) {
-  .header__logo {
-    margin-left: 0.4em;
-  }
+  
   .hero__section {
     height: 30vh;
     padding: 0 60px 27px 0;

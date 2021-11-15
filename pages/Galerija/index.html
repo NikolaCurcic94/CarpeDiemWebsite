@@ -22,7 +22,7 @@
             href="../../index.html"
             class="header__logo slide-down"
             style="--i: 1"
-            ><img src="img/CarpeDiemWhite.png" alt="logo"
+            ><img src="../../img/CarpeDiemWhite.png" alt="logo"
           /></a>
   
           <nav class="header__nav">
@@ -30,7 +30,7 @@
             <ul class="nav-links">
               <li class="header__li slide-down" style="--i: 2">
                 <a
-                  href="pages/O-nama/index.html"
+                  href="../O-nama/index.html"
                   class="link text-decoration-none"
                   style="--i: 2"
                   >O nama</a
@@ -38,7 +38,7 @@
               </li>
               <li class="header__li slide-down" style="--i: 3">
                 <a
-                  href="pages/Nasa-ponuda/index.html"
+                  href="../Nasa-ponuda/index.html"
                   class="link text-decoration-none"
                   style="--i: 3"
                   >Naša ponuda</a
@@ -46,7 +46,7 @@
               </li>
               <li class="header__li slide-down" style="--i: 4">
                 <a
-                  href="pages/Nas-tim/index.html"
+                  href="../Nas-tim/index.html"
                   class="link text-decoration-none"
                   style="--i: 4"
                   >Naš tim</a
@@ -62,7 +62,7 @@
               </li>
               <li class="header__li slide-down" style="--i: 6">
                 <a
-                  href="pages/Kontakt/index.html"
+                  href="../Kontakt/index.html"
                   class="link text-decoration-none"
                   style="--i: 6"
                   >Kontakt</a
@@ -98,8 +98,8 @@
                  
         </div>  
     </section>
-</main>
-    
+
+</main>  
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -111,20 +111,25 @@
 
         /*****************************Menu button**********************************/
 
-        let mobileMenu = document.getElementById("mobile-menu");
-        let menuBtn = document.querySelector('.menu-btn');
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
         let menuOpen = false;
-        menuBtn.addEventListener('click', () => {
-            if (!menuOpen) {
-                menuBtn.classList.add('open') 
-                menuOpen = true;
-                mobileMenu.style.display = "block";
-               
-            } else {
-                menuBtn.classList.remove('open') 
-                    menuOpen = false;
-                    mobileMenu.style.display = "none";   
-            }});
+
+        hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        links.forEach((link) => {
+          link.classList.toggle("fade");
+        });
+        if (!menuOpen) {
+          hamburger.classList.add("open");
+          menuOpen = true;
+        } else {
+          hamburger.classList.remove("open");
+          menuOpen = false;
+        }
+      });
     </script>
 
 </body>

@@ -586,8 +586,31 @@ h1 {
 }
 
 @media (max-width: 450px) {
-  header img {
-    margin-left: 0.5em;
+  .header img {
+    width: 10rem;
+    margin-left: 1em;
+  }
+  .header img {
+    width: 10rem;
+    margin-left: 1em;
+  }
+  .menu-btn-burger {
+    width: 35px;
+    height: 4px;
+    border-radius: 4px;
+  }
+  
+  .menu-btn-burger::before,
+  .menu-btn-burger::after {
+    width: 35px;
+    height: 4px;
+  }
+  
+  .menu-btn-burger::before {
+    transform: translateY(-10px);
+  }
+  .menu-btn-burger::after {
+    transform: translateY(10px);
   }
   .icons {
     font-size: x-small;
