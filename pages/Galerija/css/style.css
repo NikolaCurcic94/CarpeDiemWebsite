@@ -428,6 +428,10 @@ header a {
 }
 
 /**********************************Galery section********************************/
+.galery__wrapper {
+  flex-wrap: wrap;
+}
+
 .img {
   height: 33.33vh;
 }
