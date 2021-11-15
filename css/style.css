@@ -791,6 +791,7 @@ header a {
 
   .footer__content {
     padding-left: 1em;
+    row-gap: 0.6em;
   }
 }
 
