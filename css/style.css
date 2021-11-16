@@ -750,7 +750,7 @@ header a {
     height: 200px;
   }
   .footer img {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
   }
 
   .footer__content {
@@ -775,9 +775,7 @@ header a {
   .footer p {
     font-size: x-small;
   }
-  .footer img {
-    margin-bottom: 1em;
-  }
+  
 }
 
 @media (max-width: 450px) {
@@ -819,7 +817,7 @@ header a {
   #map {
     margin: 3em auto;
     width: 70%;
-    height: 100px;
+    height: 150px;
   }
 
   .footer img {
