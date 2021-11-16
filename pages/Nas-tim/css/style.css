@@ -455,7 +455,10 @@ header a {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
 }
-
+h4 {
+  font-weight: 700;
+  padding-bottom: 0.8em;
+}
 .card:hover {
   height: 370px;
 }
