@@ -436,23 +436,23 @@ header a {
 
 /**********************************Map section********************************/
 
-.footer {
+.contact__section {
   background-color: #28aea3;
   color: white;
   padding: 2em 1em;
 }
 
-.footer__wrapper {
+.contact__section__wrapper {
   padding: 0 1em;
 }
 
-.footer__content {
+.contact__section__content {
   display: flex;
   flex-direction: column;
+  row-gap: 1em;
   flex-wrap: wrap;
-  flex-basis: 50%;
-  justify-content: start;
-  margin: 0 auto;
+  text-align: center;
+  margin: 1em auto;
   padding-top: 2em;
 }
 
@@ -460,6 +460,7 @@ header a {
   display: flex;
   justify-content: start;
   gap: 1.5em;
+  margin: 0 auto;
 }
 
 #map {
@@ -468,7 +469,7 @@ header a {
   height: 300px;
 }
 
-.footer p {
+section p {
   font-size: x-large;
 }
 
