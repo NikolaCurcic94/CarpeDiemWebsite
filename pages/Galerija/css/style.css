@@ -433,7 +433,7 @@ header a {
 .gallery__wrapper {
   min-height: 100vh;
   flex-wrap: wrap;
-  gap: 0;
+  gap: 1em;
   justify-content: center;
   padding-top: 70px;
 }
