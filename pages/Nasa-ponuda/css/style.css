@@ -486,21 +486,18 @@ h1 {
 }
 
 .footer__wrapper {
-  flex-wrap: wrap;
   padding: 0 1em;
-}
-.footer__img {
-  flex-basis: 50%;
-  background-image: url(../img/CarepDiem-56.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .footer__content {
-  flex-basis: 50%;
-  text-align: start;
-  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  flex-wrap: wrap;
+  
+  justify-content: start;
+  margin: 1em auto;
+  padding-left: 2em;
 }
 
 .footer__icons__div {
@@ -509,15 +506,11 @@ h1 {
   gap: 1.5em;
 }
 
-.footer img {
-  width: 100%;
+footer img {
+  max-width: 400px;
   margin-bottom: 2em;
 }
 
-.footer__img {
-  background-image: url(../../../img/CarepDiem-56.jpg);
-  background-position: center;
-}
 
 .footer p {
   font-size: x-large;
@@ -527,10 +520,16 @@ h1 {
   p {
     font-size: 0.9rem;
   }
+  .icons {
+    font-size: medium;
+  }
 }
 @media (max-width: 768px) {
   header img {
     width: 13em;
+  }
+  .icons {
+    font-size: smaller;
   }
 }
 
@@ -544,6 +543,9 @@ h1 {
   .image {
     width: 80%;
     margin: 1em auto;
+  }
+  .icons {
+    font-size: small;
   }
 }
 
@@ -574,6 +576,10 @@ h1 {
   .menu-btn-burger::after {
     transform: translateY(10px);
   }
+  .icons {
+    font-size: x-small;
+  }
+
 }
 
 @media (max-width: 350px) {
