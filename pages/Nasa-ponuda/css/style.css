@@ -497,7 +497,7 @@ h1 {
   
   justify-content: start;
   margin: 1em auto;
-  padding-left: 2em;
+  
 }
 
 .footer__icons__div {
@@ -517,7 +517,7 @@ footer img {
 }
 
 @media (max-width: 880px) {
-  p {
+  section p {
     font-size: 0.9rem;
   }
   .icons {
@@ -537,7 +537,7 @@ footer img {
   header img {
     width: 10em;
   }
-  p {
+  section p {
     font-size: 0.8rem;
   }
   .image {
@@ -579,7 +579,10 @@ footer img {
   .icons {
     font-size: x-small;
   }
-
+  footer img {
+    max-width: 300px;
+    margin-bottom: 2em;
+  }
 }
 
 @media (max-width: 350px) {
