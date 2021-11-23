@@ -493,13 +493,13 @@ header a {
   align-items: center;
   padding: 50px 10px 30px;
   width: 100%;
-  background-color: teal;
+  background: linear-gradient(#28aea3, teal);
 }
 
-/**********************************Nasa ponuda section********************************/
+/**********************************Our offer section********************************/
 
 .section__our__offer {
-  background-color: teal;
+  background: linear-gradient(teal 10%, #28aea3 90%);
   padding: 30px 40px 70px 40px;
 }
 
@@ -557,7 +557,7 @@ header a {
 /**********************************footer********************************/
 
 .footer {
-  background-color: #28aea3;
+  background: linear-gradient(#28aea3 70%, teal);
   color: white;
   padding: 2em 1em;
 }
@@ -776,9 +776,7 @@ header a {
     font-size: 0.5em;
   }
   .section__our__offer {
-    background-image: url(./fitnessBackgrounds/istockphoto-1255917758-612x612.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding-bottom: 1.5em;
   }
   .icons {
     font-size: x-small;
@@ -789,7 +787,9 @@ header a {
     width: 70%;
     height: 150px;
   }
-
+  .footer {
+    padding: 1.5em 0;
+  }
   .footer img {
     margin-bottom: 0.5em;
   }
