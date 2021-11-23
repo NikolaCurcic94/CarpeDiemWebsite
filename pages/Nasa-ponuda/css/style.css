@@ -448,7 +448,7 @@ h1 {
   width: 50%;
   margin: 2em auto;
 }
-.first__section {
+#first__section {
   padding: 1.3em;
   background-color: #28aea3;
   flex-direction: column;
@@ -458,19 +458,19 @@ h1 {
 .first__section h1 {
   margin-top: 2em;
 }
-.second__section {
+#second__section {
   padding: 1.3em;
   background-color: teal;
   flex-direction: column;
 }
 
-.third__section {
+#third__section {
   padding: 1.3em;
   background-color: rgb(23, 89, 109);
   flex-direction: column;
 }
 
-.fourth__section {
+#fourth__section {
   padding: 30px;
   padding-top: 30px;
   background-color: teal;
