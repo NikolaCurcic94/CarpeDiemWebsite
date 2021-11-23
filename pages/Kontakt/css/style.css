@@ -437,7 +437,9 @@ header a {
 /**********************************Map section********************************/
 
 .contact__section {
-  background-color: #28aea3;
+  background-image: url(../../../css/fitnessBackgrounds/fitness-background-3.jpg);
+  background-repeat: no-repeat;
+  
   color: white;
   padding: 2em 1em;
 }
