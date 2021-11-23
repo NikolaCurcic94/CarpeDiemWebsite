@@ -365,6 +365,7 @@ i {
     -webkit-clip-path: circle(100px at 90% -10%);
     transition: all 1s ease-in-out;
     pointer-events: none;
+    
   }
   .nav-links.open {
     clip-path: circle(1000px at 90% -10%);
@@ -487,7 +488,7 @@ header a {
   padding-bottom: 20px;
 }
 
-/**********************************Section-carousel********************************/
+/**********************************Carousel********************************/
 
 .section-carousel {
   align-items: center;
