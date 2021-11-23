@@ -10,9 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/leaflet.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/847d9cba98.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <header class="header">
         <div class="header__wrapper wrapper">
           <a
@@ -27,7 +30,7 @@
             <ul class="nav-links">
               <li class="header__li slide-down" style="--i: 2">
                 <a
-                  href="../O-nama/index.html"
+                  href="../About-us/index.html"
                   class="link text-decoration-none"
                   style="--i: 2"
                   >O nama</a
@@ -35,7 +38,7 @@
               </li>
               <li class="header__li slide-down" style="--i: 3">
                 <a
-                  href="../Nasa-ponuda/index.html"
+                  href="../Our-offer/index.html"
                   class="link text-decoration-none"
                   style="--i: 3"
                   >Naša ponuda</a
@@ -43,7 +46,7 @@
               </li>
               <li class="header__li slide-down" style="--i: 4">
                 <a
-                  href="../Nas-tim/index.html"
+                  href="../Our-team/index.html"
                   class="link text-decoration-none"
                   style="--i: 4"
                   >Naš tim</a
@@ -51,7 +54,7 @@
               </li>
               <li class="header__li slide-down" style="--i: 5">
                 <a
-                  href="../Galerija/index.html"
+                  href="index.html"
                   class="link text-decoration-none"
                   style="--i: 5"
                   >Galerija</a
@@ -59,7 +62,7 @@
               </li>
               <li class="header__li slide-down" style="--i: 6">
                 <a
-                  href="index.html"
+                  href="../Contact/index.html"
                   class="link text-decoration-none"
                   style="--i: 6"
                   >Kontakt</a
@@ -73,45 +76,41 @@
         </div>
       </header>
 <main>
-      <section class="contact__section">
-        <div class="contact__section__wraper wrapper">
-          
-          <div class="contact__section__content">
+     <div>
+        <div class="gallery__wrapper wrapper">
 
-            <p>Španskih boraca 24/7, treći sprat 11000 Novi Beograd</p>
+                <div id="img-1" class="img"></div>
+                <div id="img-2" class="img"></div>
+                <div id="img-3" class="img"></div>
+                <div id="img-4" class="img"></div>
+            
+                <div id="img-5" class="img"></div>
+                <div id="img-6" class="img"></div>
+                <div id="img-7" class="img"></div>
+                <div id="img-8" class="img"></div>
+           
+                <div id="img-9" class="img"></div>
+                <div id="img-10" class="img"></div>
+                <div id="img-11" class="img"></div>
+                <div id="img-12" class="img"></div>
+            
+                 
+        </div>  
+      </div>
 
-            <p>E-mail: office@carpediemplus.rs</p>
+</main>  
 
-            <p>Telefon: 065/23-00-330</p>
-
-            <div class="footer__icons__div">
-              <a class="icons" href="#"
-                ><i
-                  class="fab fa-facebook-square fa-2x fa-md-1x"
-                ></i
-              ></a>
-              <a class="icons" href="#"
-                ><i class="fab fa-instagram fa-2x fa-md-1x"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div id="map"></div>
-      </section>
-    
-    </main>
-    
-    <script src="js/leaflet.js"></script>       
     <script>
-      /*****************************Menu button**********************************/
 
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".nav-links");
-      const links = document.querySelectorAll(".nav-links li");
+        /*****************************Menu button**********************************/
 
-      let menuOpen = false;
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
 
-      hamburger.addEventListener("click", () => {
+        let menuOpen = false;
+
+        hamburger.addEventListener("click", () => {
         navLinks.classList.toggle("open");
         links.forEach((link) => {
           link.classList.toggle("fade");
@@ -124,20 +123,8 @@
           menuOpen = false;
         }
       });
-    /*****************************Map**********************************/
-         var myMap = L.map('map', {
-        center: [44.81528196157618, 20.418752497461206],
-        zoom: 15,
-        doubleClickZoom: true,
-        scrollWheelZoom: false,
-        });
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-        { attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(myMap);
-
-        var marker = L.marker([44.81528196157618, 20.418752497461206]).addTo(myMap);
-
     </script>
+
 </body>
 
 </html>

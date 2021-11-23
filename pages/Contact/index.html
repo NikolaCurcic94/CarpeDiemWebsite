@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/style.css"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/leaflet.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/847d9cba98.js" crossorigin="anonymous"></script>
 </head>
@@ -22,10 +23,11 @@
           /></a>
   
           <nav class="header__nav">
+            
             <ul class="nav-links">
               <li class="header__li slide-down" style="--i: 2">
                 <a
-                  href="../O-nama/index.html"
+                  href="../About-us/index.html"
                   class="link text-decoration-none"
                   style="--i: 2"
                   >O nama</a
@@ -33,7 +35,7 @@
               </li>
               <li class="header__li slide-down" style="--i: 3">
                 <a
-                  href="../Nasa-ponuda/index.html"
+                  href="../Our-offer/index.html"
                   class="link text-decoration-none"
                   style="--i: 3"
                   >Naša ponuda</a
@@ -41,7 +43,7 @@
               </li>
               <li class="header__li slide-down" style="--i: 4">
                 <a
-                  href="index.html"
+                  href="../Our-team/index.html"
                   class="link text-decoration-none"
                   style="--i: 4"
                   >Naš tim</a
@@ -49,7 +51,7 @@
               </li>
               <li class="header__li slide-down" style="--i: 5">
                 <a
-                  href="../Galerija/index.html"
+                  href="../Gallery/index.html"
                   class="link text-decoration-none"
                   style="--i: 5"
                   >Galerija</a
@@ -57,7 +59,7 @@
               </li>
               <li class="header__li slide-down" style="--i: 6">
                 <a
-                  href="../Kontakt/index.html"
+                  href="index.html"
                   class="link text-decoration-none"
                   style="--i: 6"
                   >Kontakt</a
@@ -70,67 +72,72 @@
           </nav>
         </div>
       </header>
-    
-  
 <main>
+      <div class="contact__section">
+        <div class="contact__section__wraper wrapper">
+          
+          <div class="contact__section__content">
 
-    <div class="container">
-        <div class="card">
-            <div class="imgBX">
-                <img class="img-card" src="../../img/carpediemmaincrop.jpg" alt="img">
-            </div>
-            <div class="content">
-                <h4>Miroslav Babić</h4>
-                <h5>Diplomirani Master sporta i fizičkog vaspitanja</h5>
-            </div>
-        </div>
-        <div class="card">
-            <div class="imgBX">
-                <img class="img-card" src="../../img/carpe-diem-persnalni-trener-05.jpg" alt="img">
-            </div>
-            <div class="content">
-                <h4>Nikola Pavlović</h4>
-                <h5>Diplomirani Master sporta i fizičkog vaspitanja</h5>
-            </div>
-        </div>
-        <div class="card">
-            <div class="imgBX">
-                <img class="img-card" src="CarepDiem-53.jpg" alt="img">
-            </div>
-            <div class="content" id="kps">
-                <h4>Nikola Ćurčić</h4>
-                <h5>Diplomirani Master sportske i terapijske fizičke aktivnosti</h5>
-            </div>
-        </div>
-    </div>
+            <p>Španskih boraca 24/7, treći sprat 11000 Novi Beograd</p>
 
-</main>
+            <p>E-mail: office@carpediemplus.rs</p>
+
+            <p>Telefon: 065/23-00-330</p>
+
+            <div class="footer__icons__div">
+              <a class="icons" href="#"
+                ><i
+                  class="fab fa-facebook-square fa-2x fa-md-1x"
+                ></i
+              ></a>
+              <a class="icons" href="#"
+                ><i class="fab fa-instagram fa-2x fa-md-1x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div id="map"></div>
+      </div>
     
+    </main>
     
+    <script src="js/leaflet.js"></script>       
     <script>
-        /*****************************Menu button**********************************/
-  
-        const hamburger = document.querySelector(".hamburger");
-        const navLinks = document.querySelector(".nav-links");
-        const links = document.querySelectorAll(".nav-links li");
-  
-        let menuOpen = false;
-  
-        hamburger.addEventListener("click", () => {
-          navLinks.classList.toggle("open");
-          links.forEach((link) => {
-            link.classList.toggle("fade");
-          });
-          if (!menuOpen) {
-            hamburger.classList.add("open");
-            menuOpen = true;
-          } else {
-            hamburger.classList.remove("open");
-            menuOpen = false;
-          }
-        });
-      </script>
+      /*****************************Menu button**********************************/
 
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      const links = document.querySelectorAll(".nav-links li");
+
+      let menuOpen = false;
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        links.forEach((link) => {
+          link.classList.toggle("fade");
+        });
+        if (!menuOpen) {
+          hamburger.classList.add("open");
+          menuOpen = true;
+        } else {
+          hamburger.classList.remove("open");
+          menuOpen = false;
+        }
+      });
+    /*****************************Map**********************************/
+         var myMap = L.map('map', {
+        center: [44.81528196157618, 20.418752497461206],
+        zoom: 15,
+        doubleClickZoom: true,
+        scrollWheelZoom: false,
+        });
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        { attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(myMap);
+
+        var marker = L.marker([44.81528196157618, 20.418752497461206]).addTo(myMap);
+
+    </script>
 </body>
 
 </html>

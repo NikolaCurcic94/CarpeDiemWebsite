@@ -437,7 +437,7 @@ header a {
 /**********************************Map section********************************/
 
 .contact__section {
-  background-image: url(../../../css/fitnessBackgrounds/fitness-background-3.jpg);
+  background-color: rgb(44, 173, 152);
   background-repeat: no-repeat;
   
   color: white;
