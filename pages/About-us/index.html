@@ -232,21 +232,19 @@
 
       const hamburger = document.querySelector(".hamburger");
       const navLinks = document.querySelector(".nav-links");
-      const links = document.querySelectorAll(".nav-links li");
 
       let menuOpen = false;
 
       hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("open");
-        links.forEach((link) => {
-          link.classList.toggle("fade");
-        });
+      
         if (!menuOpen) {
           hamburger.classList.add("open");
           menuOpen = true;
+          navLinks.classList.add("nav-links--open")
         } else {
           hamburger.classList.remove("open");
           menuOpen = false;
+          navLinks.classList.remove("nav-links--open")
         }
       });
     </script>

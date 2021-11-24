@@ -1,130 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="css/style.css"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="css/leaflet.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://kit.fontawesome.com/847d9cba98.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/847d9cba98.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="header">
-        <div class="header__wrapper wrapper">
-          <a
-            href="../../index.html"
-            class="header__logo slide-down"
-            style="--i: 1"
-            ><img src="../../img/CarpeDiemWhite.png" alt="logo"
-          /></a>
-  
-          <nav class="header__nav">
-            
-            <ul class="nav-links">
-              <li class="header__li slide-down" style="--i: 2">
-                <a
-                  href="../About-us/index.html"
-                  class="link text-decoration-none"
-                  style="--i: 2"
-                  >O nama</a
-                >
-              </li>
-              <li class="header__li slide-down" style="--i: 3">
-                <a
-                  href="../Our-offer/index.html"
-                  class="link text-decoration-none"
-                  style="--i: 3"
-                  >Naša ponuda</a
-                >
-              </li>
-              <li class="header__li slide-down" style="--i: 4">
-                <a
-                  href="../Our-team/index.html"
-                  class="link text-decoration-none"
-                  style="--i: 4"
-                  >Naš tim</a
-                >
-              </li>
-              <li class="header__li slide-down" style="--i: 5">
-                <a
-                  href="index.html"
-                  class="link text-decoration-none"
-                  style="--i: 5"
-                  >Galerija</a
-                >
-              </li>
-              <li class="header__li slide-down" style="--i: 6">
-                <a
-                  href="../Contact/index.html"
-                  class="link text-decoration-none"
-                  style="--i: 6"
-                  >Kontakt</a
-                >
-              </li>
-            </ul>
-            <div class="hamburger">
-              <div class="menu-btn-burger"></div>
-            </div>
-          </nav>
-        </div>
-      </header>
-<main>
-     <div>
-        <div class="gallery__wrapper wrapper">
+      <div class="header__wrapper wrapper">
+        <a
+          href="../../index.html"
+          class="header__logo slide-down"
+          style="--i: 1"
+          ><img src="../../img/CarpeDiemWhite.png" alt="logo"
+        /></a>
 
-                <div id="img-1" class="img"></div>
-                <div id="img-2" class="img"></div>
-                <div id="img-3" class="img"></div>
-                <div id="img-4" class="img"></div>
-            
-                <div id="img-5" class="img"></div>
-                <div id="img-6" class="img"></div>
-                <div id="img-7" class="img"></div>
-                <div id="img-8" class="img"></div>
-           
-                <div id="img-9" class="img"></div>
-                <div id="img-10" class="img"></div>
-                <div id="img-11" class="img"></div>
-                <div id="img-12" class="img"></div>
-            
-                 
-        </div>  
+        <nav class="header__nav">
+          <ul class="nav-links">
+            <li class="header__li slide-down" style="--i: 2">
+              <a
+                href="../About-us/index.html"
+                class="link text-decoration-none"
+                style="--i: 2"
+                >O nama</a
+              >
+            </li>
+            <li class="header__li slide-down" style="--i: 3">
+              <a
+                href="../Our-offer/index.html"
+                class="link text-decoration-none"
+                style="--i: 3"
+                >Naša ponuda</a
+              >
+            </li>
+            <li class="header__li slide-down" style="--i: 4">
+              <a
+                href="../Our-team/index.html"
+                class="link text-decoration-none"
+                style="--i: 4"
+                >Naš tim</a
+              >
+            </li>
+            <li class="header__li slide-down" style="--i: 5">
+              <a
+                href="index.html"
+                class="link text-decoration-none"
+                style="--i: 5"
+                >Galerija</a
+              >
+            </li>
+            <li class="header__li slide-down" style="--i: 6">
+              <a
+                href="../Contact/index.html"
+                class="link text-decoration-none"
+                style="--i: 6"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+          <div class="hamburger">
+            <div class="menu-btn-burger"></div>
+          </div>
+        </nav>
       </div>
+    </header>
+    <main>
+      <div>
+        <div class="gallery__wrapper wrapper">
+          <div id="img-1" class="img"></div>
+          <div id="img-2" class="img"></div>
+          <div id="img-3" class="img"></div>
+          <div id="img-4" class="img"></div>
 
-</main>  
+          <div id="img-5" class="img"></div>
+          <div id="img-6" class="img"></div>
+          <div id="img-7" class="img"></div>
+          <div id="img-8" class="img"></div>
+
+          <div id="img-9" class="img"></div>
+          <div id="img-10" class="img"></div>
+          <div id="img-11" class="img"></div>
+          <div id="img-12" class="img"></div>
+        </div>
+      </div>
+    </main>
 
     <script>
+      /*****************************Menu button**********************************/
 
-        /*****************************Menu button**********************************/
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
 
-        const hamburger = document.querySelector(".hamburger");
-        const navLinks = document.querySelector(".nav-links");
-        const links = document.querySelectorAll(".nav-links li");
+      let menuOpen = false;
 
-        let menuOpen = false;
-
-        hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("open");
-        links.forEach((link) => {
-          link.classList.toggle("fade");
-        });
+      hamburger.addEventListener("click", () => {
         if (!menuOpen) {
           hamburger.classList.add("open");
           menuOpen = true;
+          navLinks.classList.add("nav-links--open");
         } else {
           hamburger.classList.remove("open");
           menuOpen = false;
+          navLinks.classList.remove("nav-links--open");
         }
       });
     </script>
-
-</body>
-
+  </body>
 </html>
