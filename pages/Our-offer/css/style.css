@@ -433,7 +433,7 @@ h1 {
 }
 #first__section {
   padding: 1.3em;
-  background-color: #28aea3;
+  background: linear-gradient(#28aea3 70%, teal);
   flex-direction: column;
   justify-content: center;
 }
@@ -443,20 +443,20 @@ h1 {
 }
 #second__section {
   padding: 1.3em;
-  background-color: teal;
+  background-color: #28aea3;
   flex-direction: column;
 }
 
 #third__section {
   padding: 1.3em;
-  background-color: rgb(23, 89, 109);
+  background-color: #28aea3;
   flex-direction: column;
 }
 
 #fourth__section {
   padding: 30px;
   padding-top: 30px;
-  background-color: teal;
+  background-color: #28aea3;
   flex-direction: column;
 }
 

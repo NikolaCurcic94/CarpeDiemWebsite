@@ -350,6 +350,7 @@ i {
     position: fixed;
     inset: 0 0 0 30%;
     background: rgb(11, 100, 172);
+    backdrop-filter: blur(0.5rem);
     height: 100vh;
     flex-direction: column;
     justify-content: start;

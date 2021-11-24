@@ -234,23 +234,6 @@ i {
   }
 }
 
-.slide-top {
-  opacity: 0;
-  animation: slide-top 0.5s linear forwards;
-  animation-delay: calc(0.2s * var(--i));
-}
-
-@keyframes slide-top {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
 .slide-right {
   opacity: 0;
   animation: slide-right 0.5s linear forwards;
@@ -451,21 +434,21 @@ h1 {
 
 .third__section {
   padding: 1.3em;
-  background-color: rgb(23, 89, 109);
+  background: linear-gradient(teal 10%, #28aea3 90%);
   flex-direction: column;
 }
 
 .fourth__section {
   padding: 30px;
   padding-top: 30px;
-  background-color: teal;
+  background: linear-gradient(#28aea3 70%, teal);
   flex-direction: column;
 }
 
 /**********************************Footer********************************/
 
 .footer {
-  background-color: #28aea3;
+  background-color: teal;
   color: white;
   padding: 2em;
 }
