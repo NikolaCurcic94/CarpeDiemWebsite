@@ -421,27 +421,26 @@ h1 {
 }
 .first__section {
   padding: 1.3em;
-  background-color: #28aea3;
+  background: linear-gradient(#28aea3 70%, teal);
   flex-direction: column;
   justify-content: center;
 }
 
 .second__section {
   padding: 1.3em;
-  background-color: teal;
-  flex-direction: column;
+  background: linear-gradient(teal 10%, #28aea3 90%);
 }
 
 .third__section {
   padding: 1.3em;
-  background: linear-gradient(teal 10%, #28aea3 90%);
+  background: linear-gradient(#28aea3 70%, teal);
   flex-direction: column;
 }
 
 .fourth__section {
   padding: 30px;
   padding-top: 30px;
-  background: linear-gradient(#28aea3 70%, teal);
+  background: linear-gradient(teal 10%, #28aea3 90%);
   flex-direction: column;
 }
 
