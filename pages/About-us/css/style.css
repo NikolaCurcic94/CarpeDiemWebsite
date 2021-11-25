@@ -555,6 +555,10 @@ h1 {
   .icons {
     font-size: small;
   }
+  .image {
+    width: 90%;
+    margin: 0 auto;
+  }
   .footer {
     padding: 1em 0;
   }
