@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carpe Diem Website</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <link rel="stylesheet" href="scss/leaflet.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="css/leaflet.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
@@ -36,7 +35,7 @@
         /></a>
 
         <nav class="header__nav">
-          <ul class="nav-links">
+          <ul class="nav__links">
             <li class="header__li slide-down" style="--i: 2">
               <a
                 href="pages/About-us/index.html"
@@ -86,28 +85,28 @@
     </header>
     <main>
       <div class="hero__section">
-        <p class="hero__section__content slide-left">
+        <p class="hero__section__content">
           CarpeDiem+ je fitness studio osnovan sa idejom da stvorimo
           najkvalitetniji i najefikasniji metod personalnog treninga na ovim
           prostorima.
         </p>
       </div>
       <section class="section__info">
-        <div class="section__monthly wrapper slide-right">
-          <div class="section__monthly__img"></div>
+        <div class="section__info__monthly wrapper">
+          <div class="section__info__monthly__img"></div>
           <div class="monthly">
-            <h1 class="slide-right">Na mesečnom nivou dobijate:</h1>
+            <h1 class="slide-left">Na mesečnom nivou dobijate:</h1>
             <ul>
-              <li class="slide-right">Individualno napisan program vežbanja</li>
-              <li class="slide-right">
+              <li class="slide-left">Individualno napisan program vežbanja</li>
+              <li class="slide-left">
                 Plan ishrane u potpunosti prilagođen vašim potrebama
               </li>
-              <li class="slide-right">
+              <li class="slide-left">
                 Merenje telesne kompozicije pomoću InBody230 - analizatora
                 telesnog sastava
               </li>
-              <li class="slide-right">Antropometrijski pregled i FMS test</li>
-              <li class="slide-right">
+              <li class="slide-left">Antropometrijski pregled i FMS test</li>
+              <li class="slide-left">
                 Dijagnostičko merenje testom opterećenja
               </li>
             </ul>
@@ -178,7 +177,9 @@
       </section>
     </main>
     <footer class="footer">
+      <div id="map"></div>
       <div class="footer__wrapper wrapper">
+        
         <div class="footer__img"></div>
         <div class="footer__content">
           <img src="img/CarpeDiemWhite.png" alt="CarpeDiem Logo" />
@@ -190,16 +191,16 @@
           <p>Telefon: 065/23-00-330</p>
 
           <div class="footer__icons__div">
-            <a class="icons" href="#"
+            <a class="icons" href="https://www.facebook.com/CarpeDiemPlus"
               ><i class="fab fa-facebook-square fa-2x fa-md-1x"></i
             ></a>
-            <a class="icons" href="#"
+            <a class="icons" href="https://www.instagram.com/miroslavbabic_carpediemplus/"
               ><i class="fab fa-instagram fa-2x fa-md-1x"></i
             ></a>
           </div>
         </div>
       </div>
-      <div id="map"></div>
+      
     </footer>
 
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -224,7 +225,7 @@
       /*****************************Menu button**********************************/
 
       const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".nav-links");
+      const navLinks = document.querySelector(".nav__links");
 
       let menuOpen = false;
 
@@ -233,11 +234,11 @@
         if (!menuOpen) {
           hamburger.classList.add("open");
           menuOpen = true;
-          navLinks.classList.add("nav-links--open")
+          navLinks.classList.add("nav__links--open")
         } else {
           hamburger.classList.remove("open");
           menuOpen = false;
-          navLinks.classList.remove("nav-links--open")
+          navLinks.classList.remove("nav__links--open")
         }
       });
 
@@ -245,7 +246,7 @@
 
       $(".owl-carousel").owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 20,
         nav: false,
         dots: false,
         autoplay: true,

@@ -1,0 +1,128 @@
+@import "../../../scss/config";
+@import "../../../scss/utilities";
+@import "../../../scss/buttons";
+@import "../../../scss/slide";
+@import "../../../scss/components/header";
+@import "../../../scss/components/footer";
+
+/**********************************Galery********************************/
+
+body {
+  background-color: $primary-color;
+}
+
+.gallery__wrapper {
+  min-height: 100vh;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  padding-top: 70px;
+
+  .img {
+    height: 200px;
+    width: 300px;
+  }
+  #img-1 {
+    background-image: url(../../../img/CarepDiem-56.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #img-2 {
+    background-image: url(../../../img/CarepDiem-107.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #img-3 {
+    background-image: url(../../../img/CarepDiem-53.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #img-4 {
+    background-image: url(../../../img/CarepDiem-82.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #img-5 {
+    background-image: url(../../../img/CarepDiem-104.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #img-6 {
+    background-image: url(../../../img/CarepDiem-57.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #img-7 {
+    background-image: url(../../../img/CarepDiem-51.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #img-8 {
+    background-image: url(../../../img/CarepDiem-102.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #img-9 {
+    background-image: url(../../../img/CarepDiem-52.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #img-10 {
+    background-image: url(../../../img/CarepDiem-60.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #img-11 {
+    background-image: url(../../../img/IMG_3766.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #img-12 {
+    background-image: url(../../../img/CarepDiem-66.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+/**********************************Responsive Design********************************/
+
+@media (max-width: 450px) {
+  .gallery {
+    height: 200vh;
+  }
+  .img {
+    height: 180px;
+    width: 300px;
+  }
+  .gallery__wrapper {
+    gap: 1em;
+  }
+}
+@media (max-width: 350px) {
+  .gallery {
+    height: 300vh;
+  }
+}

@@ -1,0 +1,113 @@
+/**********************************Header********************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  background: linear-gradient(rgb(8, 61, 141), rgb(19, 106, 187));
+  filter: opacity(80%);
+  z-index: 5;
+  position: fixed;
+  color: white;
+
+  &__wrapper {
+    justify-content: space-between;
+  }
+
+  img {
+    width: 15em;
+    padding: 5px;
+    margin-left: 2em;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+      margin-left: auto;
+      justify-content: start;
+    }
+
+    li {
+      margin: 0 30px;
+    }
+
+    a {
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+/******************************************Navigation bar slide*****************************************/
+
+@supports (backdrop-filter: blur(10px)) {
+  .nav__links {
+    backdrop-filter: blur(10px);
+  }
+}
+
+@media (max-width: 920px) {
+  .nav__links {
+    display: flex;
+    list-style: none;
+    position: fixed;
+    inset: 0 0 0 30%;
+    background: rgb(11, 100, 172);
+    backdrop-filter: blur(0.5rem);
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-top: 200px;
+    gap: 1em;
+    font-size: large;
+    z-index: 20;
+    transition: all 1s ease-in-out;
+    transform: translateX(100%);
+  }
+  .nav__links--open {
+    transform: translateX(0%);
+  }
+  .hamburger {
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 46%;
+    z-index: 50;
+    padding-right: 1em;
+  }
+}
+
+@media (max-width: 450px) {
+  .header img {
+    width: 10rem;
+    margin-left: 1em;
+  }
+  .menu-btn-burger {
+    width: 35px;
+    height: 4px;
+    border-radius: 4px;
+  }
+
+  .menu-btn-burger::before,
+  .menu-btn-burger::after {
+    width: 35px;
+    height: 4px;
+  }
+
+  .menu-btn-burger::before {
+    transform: translateY(-10px);
+  }
+  .menu-btn-burger::after {
+    transform: translateY(10px);
+  }
+}

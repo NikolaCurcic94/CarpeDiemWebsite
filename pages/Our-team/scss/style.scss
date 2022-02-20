@@ -1,0 +1,86 @@
+@import "../../../scss/config";
+@import "../../../scss/utilities";
+@import "../../../scss/buttons";
+@import "../../../scss/slide";
+@import "../../../scss/components/header";
+@import "../../../scss/components/footer";
+
+/**********************************First section********************************/
+body {
+  height: 100%;
+  background-color: $primary-color;
+}
+
+.cards__wrapper {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 150px 0 100px;
+  gap: 30px;
+}
+
+.card {
+  max-width: 300px;
+  height: 150px;
+  background: rgb(176, 243, 243);
+  margin: 30px 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+
+  .img__box {
+    position: relative;
+    width: 260px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    .img__card {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+  }
+
+  .content {
+    position: relative;
+    margin-top: -80px;
+    padding: 0 10px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    color: #111;
+
+    h2 {
+      font-weight: 700;
+      padding-bottom: 10px;
+      color: #111;
+    }
+    h3 {
+      color: #111;
+    }
+  }
+
+  &:hover {
+    height: 270px;
+  }
+}
+
+.cards__wrapper .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -10px;
+  transition-delay: 0.3s;
+}
+
+/**********************************Responsive Design********************************/
+
+@media (max-width: 880px) {
+  p {
+    font-size: 0.9rem;
+  }
+}

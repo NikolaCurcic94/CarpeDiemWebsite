@@ -1,0 +1,135 @@
+@import "../../../scss/config";
+@import "../../../scss/utilities";
+@import "../../../scss/buttons";
+@import "../../../scss/slide";
+@import "../../../scss/components/header";
+@import "../../../scss/components/footer";
+
+/**********************************First section********************************/
+
+h1 {
+  padding-bottom: 30px;
+  padding-top: 20vh;
+  text-align: center;
+}
+
+.image {
+  width: 50%;
+  margin: 0 auto;
+}
+.first__section {
+  padding: 1.3em;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.second__section {
+  padding: 1.3em;
+}
+
+.third__section {
+  padding: 1.3em;
+  flex-direction: column;
+}
+
+.fourth__section {
+  padding: 30px;
+  padding-top: 30px;
+  flex-direction: column;
+}
+
+/**********************************Responisve********************************/
+
+@media (max-width: 992px) {
+  .footer p {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 880px) {
+  p {
+    font-size: 0.9rem;
+  }
+  .icons {
+    font-size: medium;
+  }
+  .footer {
+    padding: 1em;
+  }
+  .footer img {
+    margin-bottom: 2em;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .image {
+    flex-basis: 80%;
+  }
+  .icons {
+    font-size: smaller;
+  }
+  .footer {
+    padding: 1.5em 0;
+  }
+  .footer img {
+    margin-bottom: 1.5em;
+  }
+  .footer p {
+    font-size: small;
+  }
+
+  .footer__content {
+    padding-left: 1.5em;
+  }
+}
+
+@media (max-width: 576px) {
+  section p {
+    padding: 1em;
+    font-size: 0.8rem;
+  }
+  h1 {
+    padding-bottom: 10px;
+    padding-top: 12vh;
+  }
+  .icons {
+    font-size: small;
+  }
+  .image {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer {
+    padding: 1em 0;
+  }
+  .footer p {
+    font-size: x-small;
+  }
+  .footer img {
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 450px) {
+  .header img {
+    width: 10rem;
+    margin-left: 1em;
+  }
+
+  .icons {
+    font-size: x-small;
+  }
+  .footer {
+    padding: 1.5em 0;
+
+    &__content {
+      row-gap: 0.6em;
+    }
+
+    img {
+      margin-bottom: 0.5em;
+    }
+  }
+}

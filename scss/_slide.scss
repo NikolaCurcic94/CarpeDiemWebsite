@@ -1,0 +1,68 @@
+/**********************************Animations Configuration********************************/
+.slide-down {
+  opacity: 0;
+  animation: slide-down 0.5s linear forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.slide-top {
+  opacity: 0;
+  animation: slide-top 0.5s linear forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.slide-right {
+  opacity: 0;
+  animation: slide-right 0.5s linear forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.slide-left {
+  opacity: 0;
+  animation: slide-left 0.5s linear forwards;
+  animation-delay: 3s;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,284 @@
+@import "config";
+@import "utilities";
+@import "buttons";
+@import "slide";
+@import "./components/header";
+@import "./components/footer";
+
+/**********************************Hero section********************************/
+
+.hero__section {
+  width: 100%;
+  height: 110vh;
+  background-image: url(../img/CarepDiemBanner-2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: end;
+
+  &__content {
+    padding: 0.3em;
+    position: relative;
+    top: 250px;
+    margin-right: 70px;
+    width: 40%;
+    max-height: 60px;
+    font-size: large;
+    text-align: center;
+    color: white;
+    background-color: rgba(45, 101, 204, 0.568);
+    box-shadow: 0 0 30px rgba(24, 19, 19, 0.1);
+  }
+}
+
+/**********************************About us section********************************/
+
+.section__info {
+  background-color: $primary-color;
+  color: white;
+  padding: 70px 0;
+
+  &__monthly {
+    flex-basis: 50%;
+    font-size: large;
+    list-style-position: outside;
+
+    &__img {
+      min-width: 300px;
+      flex-basis: 50%;
+      background-image: url(../img/CarepDiem-82.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  .monthly ul {
+    font-size: large;
+    list-style-position: outside;
+    margin-left: 20px;
+    padding: 30px;
+
+    li {
+      padding: 5px;
+    }
+  }
+
+  h1 {
+    padding-bottom: 20px;
+    font-weight: 300;
+  }
+}
+
+/**********************************Carousel********************************/
+
+.section-carousel {
+  align-items: center;
+  padding: 50px 10px 30px;
+  width: 100%;
+  background: linear-gradient($primary-color, $primary-dark-color);
+}
+
+/**********************************Our offer section********************************/
+
+.section__our__offer {
+  background: linear-gradient($primary-dark-color 10%, $primary-color 90%);
+  padding: 100px 40px;
+
+  h1 {
+    margin-bottom: 60px;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 300;
+  }
+  &__wrapper {
+    display: flex;
+    row-gap: 40px;
+    column-gap: 30px;
+    align-items: baseline;
+    justify-content: center;
+    padding: 100px 0 50px;
+  }
+
+  &__icons__wrapper {
+    flex-basis: 25%;
+
+    .icons {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: box-shadow, transform;
+      transition-property: box-shadow, transform;
+
+      p {
+        padding-top: 20px;
+        font-size: 1.2em;
+      }
+    }
+
+    .icons:hover,
+    .icons:focus,
+    .icons:active {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+}
+
+/**********************************Responsive********************************/
+
+@media (max-width: 1200px) {
+  .hero__section {
+    &__content {
+      font-size: medium;
+    }
+  }
+  .section__our__offer {
+    &__wrapper {
+      flex-wrap: wrap;
+      gap: 100px;
+    }
+
+    &__icons__wrapper {
+      flex-basis: 40%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .section__our__offer {
+    p {
+      font-size: 1.2em;
+    }
+  }
+
+  .footer {
+    #map {
+      width: 70%;
+      height: 200px;
+    }
+    p {
+      font-size: medium;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .section__our__offer {
+    p {
+      font-size: 1.1em;
+    }
+    .icons {
+      font-size: medium;
+    }
+  }
+
+  .footer__wrapper {
+    gap: 40px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__section {
+    background-image: url(../img/CarepDiem-768x500.jpg);
+    background-size: cover;
+    height: 40vh;
+
+    &__content {
+      font-size: smaller;
+    }
+  }
+
+  .section__info {
+    padding: 20px 30px;
+
+    .monthly li {
+      font-size: small;
+    }
+  }
+
+  .section__our__offer {
+    flex-wrap: wrap;
+
+    p {
+      font-size: 1em;
+    }
+
+    .fas {
+      font-size: 3rem;
+    }
+  }
+
+  .footer {
+    &__content {
+      flex-basis: 70%;
+    }
+    p {
+      font-size: small;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero__section {
+    background-image: url(../img/CarepDiem-320x500.jpg);
+    background-size: cover;
+    height: 70vh;
+  }
+
+  .footer {
+    #map {
+      width: 80%;
+    }
+    p {
+      font-size: small;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .section__our__offer {
+    padding-bottom: 1.5em;
+
+    &__wrapper {
+      gap: 70px;
+
+      .section__our__offer__icons__wrapper {
+        flex-basis: 80%;
+      }
+    }
+
+    .icons {
+      font-size: large;
+    }
+  }
+
+  .footer {
+    &__wrapper {
+      padding: 20px 0;
+    }
+    &__content {
+      row-gap: 0.6em;
+    }
+
+    img {
+      margin-bottom: 0.5em;
+    }
+
+    #map {
+      margin: 3em auto;
+      width: 90%;
+      height: 150px;
+    }
+  }
+}
