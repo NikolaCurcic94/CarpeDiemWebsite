@@ -1,83 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="scss/style.css"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="scss/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="scss/leaflet.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/847d9cba98.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/847d9cba98.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="header">
-        <div class="header__wrapper wrapper">
-          <a
-            href="../../index.html"
-            class="header__logo slide-down"
-            style="--i: 1"
-            ><img src="../../img/CarpeDiemWhite.png" alt="logo"
-          /></a>
-  
-          <nav class="header__nav">
-            
-            <ul class="nav-links">
-              <li class="header__li slide-down" style="--i: 2">
-                <a
-                  href="../About-us/index.html"
-                  class="link text-decoration-none"
-                  style="--i: 2"
-                  >O nama</a
-                >
-              </li>
-              <li class="header__li slide-down" style="--i: 3">
-                <a
-                  href="../Our-offer/index.html"
-                  class="link text-decoration-none"
-                  style="--i: 3"
-                  >Naša ponuda</a
-                >
-              </li>
-              <li class="header__li slide-down" style="--i: 4">
-                <a
-                  href="../Our-team/index.html"
-                  class="link text-decoration-none"
-                  style="--i: 4"
-                  >Naš tim</a
-                >
-              </li>
-              <li class="header__li slide-down" style="--i: 5">
-                <a
-                  href="../Gallery/index.html"
-                  class="link text-decoration-none"
-                  style="--i: 5"
-                  >Galerija</a
-                >
-              </li>
-              <li class="header__li slide-down" style="--i: 6">
-                <a
-                  href="index.html"
-                  class="link text-decoration-none"
-                  style="--i: 6"
-                  >Kontakt</a
-                >
-              </li>
-            </ul>
-            <div class="hamburger">
-              <div class="menu-btn-burger"></div>
-            </div>
-          </nav>
-        </div>
-      </header>
-<main>
+      <div class="header__wrapper wrapper">
+        <a
+          href="../../index.html"
+          class="header__logo slide-down"
+          style="--i: 1"
+          ><img src="../../img/CarpeDiemWhite.png" alt="logo"
+        /></a>
+
+        <nav class="header__nav">
+          <ul class="nav__links">
+            <li class="header__li slide-down" style="--i: 2">
+              <a
+                href="../About-us/index.html"
+                class="link text-decoration-none"
+                style="--i: 2"
+                >O nama</a
+              >
+            </li>
+            <li class="header__li slide-down" style="--i: 3">
+              <a
+                href="../Our-offer/index.html"
+                class="link text-decoration-none"
+                style="--i: 3"
+                >Naša ponuda</a
+              >
+            </li>
+            <li class="header__li slide-down" style="--i: 4">
+              <a
+                href="../Our-team/index.html"
+                class="link text-decoration-none"
+                style="--i: 4"
+                >Naš tim</a
+              >
+            </li>
+            <li class="header__li slide-down" style="--i: 5">
+              <a
+                href="../Gallery/index.html"
+                class="link text-decoration-none"
+                style="--i: 5"
+                >Galerija</a
+              >
+            </li>
+            <li class="header__li slide-down" style="--i: 6">
+              <a
+                href="index.html"
+                class="link text-decoration-none"
+                style="--i: 6"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+          <div class="hamburger">
+            <div class="menu-btn-burger"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
       <section class="contact__section">
         <div class="contact__section__wraper wrapper">
-          
           <div class="contact__section__content slide-right">
             <h2>Kontakt</h2>
-            
+
             <p>Španskih boraca 24/7, treći sprat 11000 Novi Beograd</p>
 
             <p>E-mail: office@carpediemplus.rs</p>
@@ -86,9 +90,7 @@
 
             <div class="icons__wrapper">
               <a class="icons" href="#"
-                ><i
-                  class="fab fa-facebook-square fa-2x fa-md-1x"
-                ></i
+                ><i class="fab fa-facebook-square fa-2x fa-md-1x"></i
               ></a>
               <a class="icons" href="#"
                 ><i class="fab fa-instagram fa-2x fa-md-1x"></i
@@ -98,44 +100,9 @@
         </div>
         <div id="map" class="slide-left"></div>
       </section>
-    
     </main>
-    
-    <script src="js/leaflet.js"></script>       
-    <script>
-      /*****************************Menu button**********************************/
 
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".nav-links");
-
-      let menuOpen = false;
-
-      hamburger.addEventListener("click", () => {
-      
-        if (!menuOpen) {
-          hamburger.classList.add("open");
-          menuOpen = true;
-          navLinks.classList.add("nav-links--open")
-        } else {
-          hamburger.classList.remove("open");
-          menuOpen = false;
-          navLinks.classList.remove("nav-links--open")
-        }
-      });
-    /*****************************Map**********************************/
-         var myMap = L.map('map', {
-        center: [44.81528196157618, 20.418752497461206],
-        zoom: 15,
-        doubleClickZoom: true,
-        scrollWheelZoom: false,
-        });
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-        { attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(myMap);
-
-        var marker = L.marker([44.81528196157618, 20.418752497461206]).addTo(myMap);
-
-    </script>
-</body>
-
+    <script src="js/leaflet.js"></script>
+    <script src="../../js/script.js"></script>
+  </body>
 </html>

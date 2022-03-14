@@ -42,7 +42,7 @@
         /></a>
 
         <nav class="header__nav">
-          <ul class="nav-links">
+          <ul class="nav__links">
             <li class="header__li slide-down" style="--i: 2">
               <a
                 href="../About-us/index.html"
@@ -111,25 +111,6 @@
       </div>
     </main>
 
-    <script>
-      /*****************************Menu button**********************************/
-
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".nav-links");
-
-      let menuOpen = false;
-
-      hamburger.addEventListener("click", () => {
-        if (!menuOpen) {
-          hamburger.classList.add("open");
-          menuOpen = true;
-          navLinks.classList.add("nav-links--open");
-        } else {
-          hamburger.classList.remove("open");
-          menuOpen = false;
-          navLinks.classList.remove("nav-links--open");
-        }
-      });
-    </script>
+    <script src="../../js/script.js"></script>
   </body>
 </html>
