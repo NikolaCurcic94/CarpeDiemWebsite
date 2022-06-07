@@ -704,7 +704,7 @@ i {
     padding: 20px 30px;
   }
   .section__info .monthly li {
-    font-size: small;
+    font-size: 18px;
   }
   .section__our__offer {
     flex-wrap: wrap;
