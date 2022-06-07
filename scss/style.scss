@@ -217,9 +217,10 @@
 
 @media (max-width: 768px) {
   .hero__section {
-    background-image: url(../img/CarepDiem-768x500.jpg);
+    background-image: url(../img/CarepDiem-1.jpg);
     background-size: cover;
-    //height: 40vh;
+    background-position: 24% 0;
+    height: 80vh;
   }
 
   .section__info {
@@ -258,9 +259,10 @@
 
 @media (max-width: 576px) {
   .hero__section {
-    background-image: url(../img/CarepDiem-320x500.jpg);
+    background-image: url(../img/CarepDiem-1.jpg);
     background-size: cover;
-    height: 70vh;
+    background-position: 24% 0;
+    height: 80vh;
   }
 
   .footer {
