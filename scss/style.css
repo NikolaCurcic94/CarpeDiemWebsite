@@ -391,12 +391,6 @@ i {
 }
 
 /******************************************Navigation bar slide*****************************************/
-@supports (backdrop-filter: blur(10px)) {
-  .nav__links {
-    backdrop-filter: blur(10px);
-  }
-}
-
 @media (max-width: 920px) {
   .nav__links {
     display: flex;
@@ -669,7 +663,7 @@ i {
     font-size: 1.2em;
   }
   .footer #map {
-    width: 70%;
+    width: 80%;
     height: 200px;
   }
   .footer p {

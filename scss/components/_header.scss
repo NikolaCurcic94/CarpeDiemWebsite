@@ -48,11 +48,11 @@
 
 /******************************************Navigation bar slide*****************************************/
 
-@supports (backdrop-filter: blur(10px)) {
-  .nav__links {
-    backdrop-filter: blur(10px);
-  }
-}
+// @supports (backdrop-filter: blur(10px)) {
+//   .nav__links {
+//     backdrop-filter: blur(10px);
+//   }
+// }
 
 @media (max-width: 920px) {
   .nav__links {
