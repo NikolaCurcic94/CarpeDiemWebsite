@@ -391,12 +391,18 @@ i {
 }
 
 /******************************************Navigation bar slide*****************************************/
+@supports (backdrop-filter: blur(10px)) {
+  .nav__links {
+    backdrop-filter: blur(10px);
+  }
+}
+
 @media (max-width: 920px) {
   .nav__links {
     display: flex;
     list-style: none;
     position: fixed;
-    inset: 0 0 0 30%;
+    inset: 0 0 0 55%;
     background: #0b64ac;
     backdrop-filter: blur(10px);
     height: 100vh;
