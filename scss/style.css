@@ -701,6 +701,9 @@ i {
   .section__our__offer {
     flex-wrap: wrap;
   }
+  .section__our__offer h1 {
+    margin-bottom: 0;
+  }
   .section__our__offer p {
     font-size: 1em;
   }
@@ -718,9 +721,6 @@ i {
     background-size: cover;
     height: 70vh;
   }
-  .footer #map {
-    width: 80%;
-  }
   .footer p {
     font-size: small;
   }
@@ -735,9 +735,6 @@ i {
   }
   .section__our__offer__wrapper .section__our__offer__icons__wrapper {
     flex-basis: 80%;
-  }
-  .section__our__offer .icons {
-    font-size: large;
   }
   .footer__wrapper {
     padding: 20px 0;
