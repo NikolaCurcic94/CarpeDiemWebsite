@@ -719,7 +719,7 @@ i {
     flex-basis: 80%;
   }
   .footer p {
-    font-size: small;
+    font-size: 18px;
   }
 }
 
@@ -729,9 +729,6 @@ i {
     background-size: cover;
     background-position: 24% 0;
     height: 80vh;
-  }
-  .footer p {
-    font-size: small;
   }
 }
 
