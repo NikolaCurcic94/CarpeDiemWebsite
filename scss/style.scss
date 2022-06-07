@@ -9,27 +9,44 @@
 
 .hero__section {
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   background-image: url(../img/CarepDiemBanner-2.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  display: flex;
-  justify-content: end;
+  padding-right: 50px;
+  //display: flex;
+  //justify-content: end;
+  //position: relative;
+  //align-items: center;
 
   &__content {
     padding: 0.3em;
     position: relative;
     top: 250px;
-    margin-right: 70px;
-    width: 40%;
-    max-height: 60px;
+    //left: 800px;
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    text-align: end;
+    max-width: 600px;
+    //max-height: 60px;
     font-size: large;
     text-align: center;
     color: white;
     background-color: rgba(45, 101, 204, 0.568);
     box-shadow: 0 0 30px rgba(24, 19, 19, 0.1);
+    backdrop-filter: blur(5px);
   }
+
+  // p {
+  //   max-width: 500px;
+  //   min-height: 30px;
+  //   color: white;
+  //   background-color: rgba(45, 101, 204, 0.568);
+  //   box-shadow: 0 0 30px rgba(24, 19, 19, 0.1);
+  //   backdrop-filter: blur(5px);
+  // }
 }
 
 /**********************************About us section********************************/
@@ -37,12 +54,13 @@
 .section__info {
   background-color: $primary-color;
   color: white;
-  padding: 70px 0;
+  padding: 70px 25px;
 
   &__monthly {
     flex-basis: 50%;
     font-size: large;
     list-style-position: outside;
+    gap: 60px;
 
     &__img {
       min-width: 300px;
@@ -155,6 +173,12 @@
 }
 
 @media (max-width: 992px) {
+  .hero__section {
+    height: 60vh;
+    &__content {
+      display: none;
+    }
+  }
   .section__our__offer {
     p {
       font-size: 1.2em;
@@ -173,6 +197,9 @@
 }
 
 @media (max-width: 880px) {
+  &__wrapper {
+    padding: 60px 0 0px;
+  }
   .section__our__offer {
     p {
       font-size: 1.1em;
@@ -192,11 +219,7 @@
   .hero__section {
     background-image: url(../img/CarepDiem-768x500.jpg);
     background-size: cover;
-    height: 40vh;
-
-    &__content {
-      font-size: smaller;
-    }
+    //height: 40vh;
   }
 
   .section__info {
@@ -214,14 +237,14 @@
       font-size: 1em;
     }
 
-    .fas {
-      font-size: 3rem;
-    }
+    // .fas {
+    //   font-size: 3rem;
+    // }
   }
 
   .footer {
     &__content {
-      flex-basis: 70%;
+      flex-basis: 80%;
     }
     p {
       font-size: small;
