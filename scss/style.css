@@ -456,7 +456,7 @@ i {
 
 /**********************************Footer********************************/
 .footer {
-  background: linear-gradient(rgba(27, 136, 179, 0.568) 10%, #28aea3);
+  background: linear-gradient(rgba(86, 172, 206, 0.568) 10%, #28aea3);
   color: white;
   padding: 2em 1em;
 }
@@ -569,7 +569,7 @@ i {
 
 /**********************************About us section********************************/
 .section__info {
-  background: linear-gradient(rgba(27, 136, 179, 0.568), #28aea3);
+  background: linear-gradient(rgba(86, 172, 206, 0.568), #28aea3);
   color: white;
   padding: 70px 25px;
 }
@@ -617,7 +617,7 @@ i {
 
 /**********************************Our offer section********************************/
 .section__our__offer {
-  background: linear-gradient(#28aea3, rgba(27, 136, 179, 0.568));
+  background: linear-gradient(#28aea3, rgba(86, 172, 206, 0.568));
   padding: 100px 40px;
 }
 
