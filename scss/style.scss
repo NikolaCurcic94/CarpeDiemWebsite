@@ -215,7 +215,7 @@
     background-image: url(../img/CarepDiem-1.jpg);
     background-size: cover;
     background-position: 24% 0;
-    height: 80vh;
+    height: 90vh;
   }
 
   .section__info {
@@ -294,6 +294,12 @@
 }
 
 @media (max-width: 400px) {
+  .hero__section {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 360px) {
   .hero__section {
     height: 45vh;
   }

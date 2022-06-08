@@ -59,4 +59,24 @@
       margin-bottom: 100px;
     }
   }
+
+  &__banner__and__links {
+    width: 100%;
+    background-color: rgb(220, 242, 245);
+    color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: space-between;
+
+    .footer__banner {
+      width: 200px;
+    }
+
+    nav {
+      display: flex;
+
+      .footer__links {
+        list-style: none;
+      }
+    }
+  }
 }

@@ -456,7 +456,7 @@ i {
 
 /**********************************Footer********************************/
 .footer {
-  background: linear-gradient(rgba(27, 148, 179, 0.568) 10%, #28aea3);
+  background: linear-gradient(rgba(27, 136, 179, 0.568) 10%, #28aea3);
   color: white;
   padding: 2em 1em;
 }
@@ -519,6 +519,26 @@ i {
   }
 }
 
+.footer__banner__and__links {
+  width: 100%;
+  background-color: #dcf2f5;
+  color: lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__banner__and__links .footer__banner {
+  width: 200px;
+}
+
+.footer__banner__and__links nav {
+  display: flex;
+}
+
+.footer__banner__and__links nav .footer__links {
+  list-style: none;
+}
+
 /**********************************Hero section********************************/
 .hero__section {
   width: 100%;
@@ -549,7 +569,7 @@ i {
 
 /**********************************About us section********************************/
 .section__info {
-  background: linear-gradient(rgba(27, 148, 179, 0.568), #28aea3);
+  background: linear-gradient(rgba(27, 136, 179, 0.568), #28aea3);
   color: white;
   padding: 70px 25px;
 }
@@ -597,7 +617,7 @@ i {
 
 /**********************************Our offer section********************************/
 .section__our__offer {
-  background: linear-gradient(#28aea3, rgba(27, 148, 179, 0.568));
+  background: linear-gradient(#28aea3, rgba(27, 136, 179, 0.568));
   padding: 100px 40px;
 }
 
@@ -703,7 +723,7 @@ i {
     background-image: url(../img/CarepDiem-1.jpg);
     background-size: cover;
     background-position: 24% 0;
-    height: 80vh;
+    height: 90vh;
   }
   .section__info {
     padding: 20px 30px;
@@ -767,6 +787,12 @@ i {
 }
 
 @media (max-width: 400px) {
+  .hero__section {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 360px) {
   .hero__section {
     height: 45vh;
   }

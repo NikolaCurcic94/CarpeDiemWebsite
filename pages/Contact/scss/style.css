@@ -456,7 +456,7 @@ i {
 
 /**********************************Footer********************************/
 .footer {
-  background: linear-gradient(rgba(27, 148, 179, 0.568) 10%, #28aea3);
+  background: linear-gradient(rgba(27, 136, 179, 0.568) 10%, #28aea3);
   color: white;
   padding: 2em 1em;
 }
@@ -517,6 +517,26 @@ i {
   .footer #map {
     margin-bottom: 100px;
   }
+}
+
+.footer__banner__and__links {
+  width: 100%;
+  background-color: #dcf2f5;
+  color: lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__banner__and__links .footer__banner {
+  width: 200px;
+}
+
+.footer__banner__and__links nav {
+  display: flex;
+}
+
+.footer__banner__and__links nav .footer__links {
+  list-style: none;
 }
 
 /**********************************Map section********************************/
