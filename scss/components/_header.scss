@@ -8,6 +8,7 @@
   z-index: 5;
   position: fixed;
   color: white;
+  padding: 0 25px;
 
   &__wrapper {
     justify-content: space-between;
@@ -31,7 +32,7 @@
     }
 
     li {
-      margin: 0 30px;
+      margin: 0 25px;
     }
 
     a {
@@ -66,7 +67,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding-top: 200px;
+    padding-top: 160px;
     gap: 1em;
     font-size: large;
     z-index: 20;

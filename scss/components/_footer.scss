@@ -1,7 +1,8 @@
 /**********************************Footer********************************/
 
 .footer {
-  background: linear-gradient(#28aea3 70%, teal);
+  //background: linear-gradient(#28aea3 70%, teal);
+  background: linear-gradient($secondary-color 10%, $primary-color);
   color: white;
   padding: 2em 1em;
 

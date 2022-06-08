@@ -352,6 +352,7 @@ i {
   z-index: 5;
   position: fixed;
   color: white;
+  padding: 0 25px;
 }
 
 .header__wrapper {
@@ -377,7 +378,7 @@ i {
 }
 
 .header nav li {
-  margin: 0 30px;
+  margin: 0 25px;
 }
 
 .header nav a {
@@ -409,7 +410,7 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding-top: 200px;
+    padding-top: 160px;
     gap: 1em;
     font-size: large;
     z-index: 20;
@@ -455,7 +456,7 @@ i {
 
 /**********************************Footer********************************/
 .footer {
-  background: linear-gradient(#28aea3 70%, teal);
+  background: linear-gradient(rgba(27, 148, 179, 0.568) 10%, #28aea3);
   color: white;
   padding: 2em 1em;
 }
@@ -526,13 +527,13 @@ i {
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-right: 50px;
+  padding-right: 100px;
 }
 
 .hero__section__content {
   padding: 0.3em;
   position: relative;
-  top: 250px;
+  top: 200px;
   display: flex;
   justify-content: end;
   margin-left: auto;
@@ -548,7 +549,7 @@ i {
 
 /**********************************About us section********************************/
 .section__info {
-  background-color: #28aea3;
+  background: linear-gradient(rgba(27, 148, 179, 0.568), #28aea3);
   color: white;
   padding: 70px 25px;
 }
@@ -591,12 +592,12 @@ i {
   align-items: center;
   padding: 50px 10px 30px;
   width: 100%;
-  background: linear-gradient(#28aea3, teal);
+  background-color: #28aea3;
 }
 
 /**********************************Our offer section********************************/
 .section__our__offer {
-  background: linear-gradient(teal 10%, #28aea3 90%);
+  background: linear-gradient(#28aea3, rgba(27, 148, 179, 0.568));
   padding: 100px 40px;
 }
 
@@ -646,7 +647,11 @@ i {
 
 /**********************************Responsive********************************/
 @media (max-width: 1200px) {
+  .hero__section {
+    padding-right: 50px;
+  }
   .hero__section__content {
+    top: 150px;
     font-size: medium;
   }
   .section__our__offer__wrapper {
@@ -660,7 +665,7 @@ i {
 
 @media (max-width: 992px) {
   .hero__section {
-    height: 60vh;
+    height: 55vh;
   }
   .hero__section__content {
     display: none;
@@ -726,13 +731,16 @@ i {
 @media (max-width: 576px) {
   .hero__section {
     background-image: url(../img/CarepDiem-1.jpg);
-    background-size: cover;
+    background-size: 200%;
     background-position: 24% 0;
-    height: 80vh;
+    height: 65vh;
   }
 }
 
 @media (max-width: 450px) {
+  .hero__section {
+    height: 55vh;
+  }
   .section__our__offer {
     padding-bottom: 1.5em;
   }
@@ -746,7 +754,7 @@ i {
     padding: 20px 0;
   }
   .footer__content {
-    row-gap: 0.6em;
+    row-gap: 1.5em;
   }
   .footer img {
     margin-bottom: 0.5em;
@@ -755,6 +763,12 @@ i {
     margin: 3em auto;
     width: 90%;
     height: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero__section {
+    height: 45vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
