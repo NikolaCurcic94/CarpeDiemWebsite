@@ -11,7 +11,8 @@
   width: 100%;
   height: 100vh;
   background-image: url(../img/CarepDiemBanner-2.jpg);
-  background-size: 100%;
+  //background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding-right: 100px;
@@ -108,6 +109,10 @@
   //background: linear-gradient($primary-color, $primary-dark-color);
   background-color: $primary-color;
   background: linear-gradient($secondary-color, $primary-color);
+
+  .img-fluid {
+    object-fit: 100%;
+  }
 }
 
 /**********************************Our offer section********************************/
@@ -194,6 +199,7 @@
 
 @media (max-width: 1200px) {
   .hero__section {
+    height: 85vh;
     padding-right: 50px;
     &__content {
       top: 150px;
