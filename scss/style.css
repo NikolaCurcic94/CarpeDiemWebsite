@@ -783,6 +783,9 @@ body {
     background-position: 24% 0;
     height: 65vh;
   }
+  .section__our__offer__icons__wrapper {
+    flex-basis: 80%;
+  }
 }
 
 @media (max-width: 450px) {
