@@ -2,7 +2,9 @@
 
 .footer {
   //background: linear-gradient(#28aea3 70%, teal);
-  background: linear-gradient($secondary-color 10%, $primary-color);
+  //background: linear-gradient($secondary-color 10%, $primary-color);
+
+  background-color: $primary-color;
   color: white;
   padding: 2em 1em;
 
@@ -44,20 +46,6 @@
     display: flex;
     justify-content: start;
     gap: 1.5em;
-  }
-
-  #map {
-    margin: 0 auto;
-    width: 60%;
-    height: 300px;
-
-    @media (min-width: 992px) {
-      margin-bottom: 200px;
-    }
-
-    @media (min-width: 768px) {
-      margin-bottom: 100px;
-    }
   }
 
   &__banner__and__links {

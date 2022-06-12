@@ -54,15 +54,6 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-body {
-  font-size: 1em;
-  line-height: 1.35;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-  background-color: #28aea3;
-}
-
 ::-moz-selection,
 ::selection {
   background: #000;
@@ -179,8 +170,9 @@ i {
 /**********************************Global Configuration********************************/
 
 $font-stack: "Open Sans", sans-serif;
+
+//$primary-dark-color: teal;
 $primary-color: #28aea3;
-$primary-dark-color: teal;
 $secondary-color: rgba(86, 172, 206, 0.568);
 $secondary-dark-color: rgb(8, 61, 141);
 $secondary-lighter-color: rgb(19, 106, 187);
@@ -189,4 +181,13 @@ $secondary-lighter-color: rgb(19, 106, 187);
   font-family: $font-stack;
   color: #fff;
   box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.35;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  background-color: $secondary-color;
 }

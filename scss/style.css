@@ -54,15 +54,6 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-body {
-  font-size: 1em;
-  line-height: 1.35;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-  background-color: #28aea3;
-}
-
 ::-moz-selection,
 ::selection {
   background: #000;
@@ -182,6 +173,15 @@ i {
   font-family: "Open Sans", sans-serif;
   color: #fff;
   box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.35;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  background-color: rgba(86, 172, 206, 0.568);
 }
 
 .wrapper {
@@ -456,7 +456,7 @@ i {
 
 /**********************************Footer********************************/
 .footer {
-  background: linear-gradient(rgba(86, 172, 206, 0.568) 10%, #28aea3);
+  background-color: #28aea3;
   color: white;
   padding: 2em 1em;
 }
@@ -499,24 +499,6 @@ i {
   display: flex;
   justify-content: start;
   gap: 1.5em;
-}
-
-.footer #map {
-  margin: 0 auto;
-  width: 60%;
-  height: 300px;
-}
-
-@media (min-width: 992px) {
-  .footer #map {
-    margin-bottom: 200px;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer #map {
-    margin-bottom: 100px;
-  }
 }
 
 .footer__banner__and__links {
@@ -568,8 +550,31 @@ i {
 }
 
 /**********************************About us section********************************/
+.mobile__content__info {
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mobile__content__info img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .mobile__content__info {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: #28aea3;
+    backdrop-filter: blur(5px);
+  }
+}
+
 .section__info {
-  background: linear-gradient(rgba(86, 172, 206, 0.568), #28aea3);
+  background: linear-gradient(#28aea3, rgba(86, 172, 206, 0.568));
   color: white;
   padding: 70px 25px;
 }
@@ -581,14 +586,11 @@ i {
   gap: 60px;
 }
 
-.section__info__monthly__img {
+.section__info__monthly img {
   min-width: 300px;
   flex-basis: 50%;
-  background-image: url(../img/CarepDiem-82.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  object-fit: contain;
+  object-position: center;
 }
 
 .section__info .monthly ul {
@@ -613,6 +615,7 @@ i {
   padding: 50px 10px 30px;
   width: 100%;
   background-color: #28aea3;
+  background: linear-gradient(rgba(86, 172, 206, 0.568), #28aea3);
 }
 
 /**********************************Our offer section********************************/
@@ -654,6 +657,11 @@ i {
   transition-property: box-shadow, transform;
 }
 
+.section__our__offer__icons__wrapper .icons img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 .section__our__offer__icons__wrapper .icons p {
   padding-top: 20px;
   font-size: 1.2em;
@@ -663,6 +671,30 @@ i {
 .section__our__offer__icons__wrapper .icons:focus,
 .section__our__offer__icons__wrapper .icons:active {
   transform: scale(1.1);
+}
+
+/**********************************Map Section********************************/
+.map__section {
+  background: linear-gradient(rgba(86, 172, 206, 0.568), #28aea3);
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .map__section {
+    padding-bottom: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .map__section {
+    padding-bottom: 100px;
+  }
+}
+
+#map {
+  margin: 0 auto;
+  width: 100%;
+  height: 300px;
 }
 
 /**********************************Responsive********************************/

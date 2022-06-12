@@ -54,15 +54,6 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-body {
-  font-size: 1em;
-  line-height: 1.35;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-  background-color: #28aea3;
-}
-
 ::-moz-selection,
 ::selection {
   background: #000;
@@ -182,6 +173,15 @@ i {
   font-family: "Open Sans", sans-serif;
   color: #fff;
   box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.35;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  background-color: rgba(86, 172, 206, 0.568);
 }
 
 .wrapper {
@@ -456,7 +456,7 @@ i {
 
 /**********************************Footer********************************/
 .footer {
-  background: linear-gradient(rgba(86, 172, 206, 0.568) 10%, #28aea3);
+  background-color: #28aea3;
   color: white;
   padding: 2em 1em;
 }
@@ -499,24 +499,6 @@ i {
   display: flex;
   justify-content: start;
   gap: 1.5em;
-}
-
-.footer #map {
-  margin: 0 auto;
-  width: 60%;
-  height: 300px;
-}
-
-@media (min-width: 992px) {
-  .footer #map {
-    margin-bottom: 200px;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer #map {
-    margin-bottom: 100px;
-  }
 }
 
 .footer__banner__and__links {

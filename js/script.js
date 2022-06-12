@@ -44,7 +44,7 @@ $(".owl-carousel").owlCarousel({
 
 var myMap = L.map("map", {
   center: [44.81528196157618, 20.418752497461206],
-  zoom: 14,
+  zoom: 15,
   doubleClickZoom: true,
   scrollWheelZoom: false,
 });
