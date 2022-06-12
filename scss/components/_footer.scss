@@ -3,14 +3,16 @@
 .footer {
   //background: linear-gradient(#28aea3 70%, teal);
   //background: linear-gradient($secondary-color 10%, $primary-color);
-
+  display: flex;
+  flex-direction: column;
   background-color: $primary-color;
   color: white;
-  padding: 2em 1em;
+  gap: 30px;
+  //padding: 2em 1em;
 
   &__wrapper {
     gap: 100px;
-    padding: 0 40px;
+    padding: 0 25px;
     justify-content: center;
   }
 
@@ -54,17 +56,15 @@
     color: rgb(211, 211, 211);
     display: flex;
     justify-content: space-between;
+    padding: 10px 25px;
 
-    .footer__banner {
-      width: 200px;
-    }
-
-    nav {
-      display: flex;
-
-      .footer__links {
-        list-style: none;
-      }
+    // .footer__banner {
+    //   width: 50px;
+    // }
+    img {
+      width: 60px;
+      filter: invert(60%) sepia(86%) saturate(347%) hue-rotate(126deg)
+        brightness(87%) contrast(88%);
     }
   }
 }

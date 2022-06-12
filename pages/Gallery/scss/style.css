@@ -181,7 +181,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  background-color: rgba(86, 172, 206, 0.568);
+  background-color: rgba(67, 188, 236, 0.795);
 }
 
 .wrapper {
@@ -362,7 +362,6 @@ body {
 .header img {
   width: 15em;
   padding: 5px;
-  margin-left: 2em;
 }
 
 .header nav {
@@ -388,7 +387,7 @@ body {
 }
 
 .header nav a:hover {
-  color: #28aea3;
+  color: #30b9ae;
 }
 
 /******************************************Navigation bar slide*****************************************/
@@ -456,14 +455,16 @@ body {
 
 /**********************************Footer********************************/
 .footer {
-  background-color: #28aea3;
+  display: flex;
+  flex-direction: column;
+  background-color: #30b9ae;
   color: white;
-  padding: 2em 1em;
+  gap: 30px;
 }
 
 .footer__wrapper {
   gap: 100px;
-  padding: 0 40px;
+  padding: 0 25px;
   justify-content: center;
 }
 
@@ -507,23 +508,17 @@ body {
   color: lightgray;
   display: flex;
   justify-content: space-between;
+  padding: 10px 25px;
 }
 
-.footer__banner__and__links .footer__banner {
-  width: 200px;
-}
-
-.footer__banner__and__links nav {
-  display: flex;
-}
-
-.footer__banner__and__links nav .footer__links {
-  list-style: none;
+.footer__banner__and__links img {
+  width: 60px;
+  filter: invert(60%) sepia(86%) saturate(347%) hue-rotate(126deg) brightness(87%) contrast(88%);
 }
 
 /**********************************Galery********************************/
 body {
-  background-color: #28aea3;
+  background-color: #30b9ae;
 }
 
 .gallery__wrapper {

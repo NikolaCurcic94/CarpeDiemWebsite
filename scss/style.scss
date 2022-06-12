@@ -74,15 +74,11 @@
     gap: 60px;
 
     img {
+      max-width: 400px;
       min-width: 300px;
       flex-basis: 50%;
       object-fit: contain;
       object-position: center;
-      // background-image: url(../img/CarepDiem-82.jpg);
-      // background-size: 100%;
-      // background-repeat: no-repeat;
-      // background-position: center;
-      // background-size: contain;
     }
   }
 
@@ -156,6 +152,8 @@
       img {
         width: 100%;
         border-radius: 10px;
+        //box-shadow: 0 0 30px rgba(24, 19, 19, 0.1);
+        box-shadow: 0 0 30px 5px #57f1bec2;
       }
       p {
         padding-top: 20px;
@@ -253,7 +251,7 @@
 
   .footer__wrapper {
     gap: 40px;
-    padding: 0;
+    //padding: 0;
   }
 }
 
