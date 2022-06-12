@@ -512,7 +512,15 @@ body {
 
 .footer__banner__and__links img {
   width: 60px;
-  filter: invert(60%) sepia(86%) saturate(347%) hue-rotate(126deg) brightness(87%) contrast(88%);
+  filter: invert(25%) sepia(100%) saturate(1284%) hue-rotate(189deg) brightness(102%) contrast(88%);
+}
+
+.footer__banner__and__links .footer__banner {
+  filter: invert(53%) sepia(97%) saturate(294%) hue-rotate(126deg) brightness(95%) contrast(95%);
+}
+
+.footer__banner__and__links .under__armour__logo {
+  filter: invert(25%) sepia(100%) saturate(1284%) hue-rotate(189deg) brightness(102%) contrast(88%);
 }
 
 /**********************************Hero section********************************/
@@ -792,7 +800,7 @@ body {
     background-image: url(../img/CarepDiem-1.jpg);
     background-size: 200%;
     background-position: 24% 0;
-    height: 65vh;
+    height: 63vh;
   }
   .section__our__offer__icons__wrapper {
     flex-basis: 80%;
