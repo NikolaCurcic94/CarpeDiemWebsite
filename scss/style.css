@@ -523,13 +523,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: 60% 0;
   padding-right: 100px;
 }
 
 .hero__section__content {
   padding: 0.3em;
   position: relative;
-  top: 200px;
+  top: 150px;
   display: flex;
   justify-content: end;
   margin-left: auto;
@@ -698,13 +699,20 @@ body {
 }
 
 /**********************************Responsive********************************/
+@media (max-width: 1400px) {
+  .hero__section {
+    background-image: url(../img/CarepDiem-1.jpg);
+  }
+  .section__our__offer__icons__wrapper {
+    flex-basis: 80%;
+  }
+}
+
 @media (max-width: 1200px) {
   .hero__section {
-    height: 85vh;
     padding-right: 50px;
   }
   .hero__section__content {
-    top: 150px;
     font-size: medium;
   }
   .section__our__offer__wrapper {
@@ -718,7 +726,7 @@ body {
 
 @media (max-width: 992px) {
   .hero__section {
-    height: 55vh;
+    background-position: 24% 0;
   }
   .hero__section__content {
     display: none;
@@ -752,7 +760,6 @@ body {
 
 @media (max-width: 768px) {
   .hero__section {
-    background-image: url(../img/CarepDiem-1.jpg);
     background-size: cover;
     background-position: 24% 0;
     height: 90vh;
