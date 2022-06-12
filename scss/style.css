@@ -181,7 +181,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  background-color: #2f77e4cb;
+  background-color: #5599ffcb;
 }
 
 .wrapper {
@@ -577,7 +577,7 @@ body {
 }
 
 .section__info {
-  background: linear-gradient(#30b9ae, #2f77e4cb);
+  background: linear-gradient(#30b9ae, #5599ffcb);
   color: white;
   padding: 70px 25px;
 }
@@ -619,7 +619,7 @@ body {
   padding: 50px 10px 30px;
   width: 100%;
   background-color: #30b9ae;
-  background: linear-gradient(#2f77e4cb, #30b9ae);
+  background: linear-gradient(#5599ffcb, #30b9ae);
 }
 
 .section-carousel .img-fluid {
@@ -628,7 +628,7 @@ body {
 
 /**********************************Our offer section********************************/
 .section__our__offer {
-  background: linear-gradient(#30b9ae, #2f77e4cb);
+  background: linear-gradient(#30b9ae, #5599ffcb);
   padding: 100px 40px;
 }
 
@@ -684,7 +684,7 @@ body {
 
 /**********************************Map Section********************************/
 .map__section {
-  background: linear-gradient(#2f77e4cb, #30b9ae);
+  background: linear-gradient(#5599ffcb, #30b9ae);
   width: 100%;
 }
 
