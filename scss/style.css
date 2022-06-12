@@ -171,7 +171,7 @@ i {
 /**********************************Global Configuration********************************/
 * {
   font-family: "Open Sans", sans-serif;
-  color: #fff;
+  color: #ffffff;
   box-sizing: border-box;
 }
 
@@ -181,7 +181,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  background-color: rgba(67, 188, 236, 0.795);
+  background-color: #43bceccb;
 }
 
 .wrapper {
@@ -577,7 +577,7 @@ body {
 }
 
 .section__info {
-  background: linear-gradient(#30b9ae, rgba(67, 188, 236, 0.795));
+  background: linear-gradient(#30b9ae, #43bceccb);
   color: white;
   padding: 70px 25px;
 }
@@ -619,7 +619,7 @@ body {
   padding: 50px 10px 30px;
   width: 100%;
   background-color: #30b9ae;
-  background: linear-gradient(rgba(67, 188, 236, 0.795), #30b9ae);
+  background: linear-gradient(#43bceccb, #30b9ae);
 }
 
 .section-carousel .img-fluid {
@@ -628,7 +628,7 @@ body {
 
 /**********************************Our offer section********************************/
 .section__our__offer {
-  background: linear-gradient(#30b9ae, rgba(67, 188, 236, 0.795));
+  background: linear-gradient(#30b9ae, #43bceccb);
   padding: 100px 40px;
 }
 
@@ -684,7 +684,7 @@ body {
 
 /**********************************Map Section********************************/
 .map__section {
-  background: linear-gradient(rgba(67, 188, 236, 0.795), #30b9ae);
+  background: linear-gradient(#43bceccb, #30b9ae);
   width: 100%;
 }
 

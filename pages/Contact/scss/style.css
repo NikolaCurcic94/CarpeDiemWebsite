@@ -171,7 +171,7 @@ i {
 /**********************************Global Configuration********************************/
 * {
   font-family: "Open Sans", sans-serif;
-  color: #fff;
+  color: #ffffff;
   box-sizing: border-box;
 }
 
@@ -181,7 +181,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  background-color: rgba(67, 188, 236, 0.795);
+  background-color: #43bceccb;
 }
 
 .wrapper {
